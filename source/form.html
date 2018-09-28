@@ -40,13 +40,86 @@
       <p class="private__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="data">
-          <label class="data__label" for="name">Имя:*</label>
-          <input class="data__input" id="name" type="text" placeholder="БАРСИК">
-          <label class="data__label" for="name">Вес (кг):*</label>
-          <input class="data__input" id="name" type="text" placeholder="7">
-          <label class="data__label" for="name">Возраст (лет):*</label>
-          <input class="data__input" id="name" type="text" placeholder="7">
+          <ul class="data__list">
+            <li class="data__item">
+              <label class="data__label" for="name">Имя:*</label>
+              <input class="data__input" id="name" type="text" placeholder="БАРСИК" required>
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="name">Вес (кг):*</label>
+              <input class="data__input" id="name" type="text" placeholder="7" required>
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="name">Возраст (лет):*</label>
+              <input class="data__input" id="name" type="text" placeholder="7">
+            </li>
+          </ul>
         </fieldset>
+        <fieldset class="program-selection">
+          <form class="program-selection__form">
+            <ul class="program-selection__list">
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="losing">
+                  <input class="program-selection__input" id="losing" type="radio" name="selector" value="losing-weight"
+                    checked>Похудение
+                </label>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="gathering">
+                  <input class="program-selection__input" id="gathering" type="radio" name="selector" value="mass-gathering">Набор
+                  массы
+                </label>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="advice">
+                  <input class="program-selection__input" id="advice" type="radio" name="selector" value="need-advice">Не
+                  знаю (нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </form>
+        </fieldset>
+        <fieldset class="contacts">
+          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__lable" for="email">E-mail:*
+                <input class="contacts__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__lable" for="phone">Телефон:*
+                <input class="contacts__input" id="phone" type="number" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="comment">
+          <textarea class="comment__textarea" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
+        </fieldset>
+        <fieldset class="additionally">
+          <legend class="additionally__title">Дополнительно</legend>
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <input class="additionally__input" id="sweetener" type="checkbox" value="sweetener" checked>
+              <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__input" id="water" type="checkbox" value="water">
+              <label class="additionally__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__input" id="milk" type="checkbox" value="milk">
+              <label class="additionally__label" for="milk">Молоко</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__input" id="vitamin" type="checkbox" value="vitamin">
+              <label class="additionally__label" for="vitamin">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button form__button" type="submit">Отправить заявку</button>
+        <p class="form__description"><sup>*</sup> &mdash; Обязательные поля</p>
       </form>
     </section>
   </main>
@@ -55,7 +128,7 @@
     <a class="footer__link" href="#">
       <img class="footer__title" src="" alt="Логотип компании">
     </a>
-    <div class="social">
+    <div class="social footer__social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/">
@@ -74,7 +147,7 @@
         </li>
       </ul>
     </div>
-    <div class="copyrights">
+    <div class="copyrights footer__copyrights">
       <ul class="copyrights__list">
         <li class="copyrights__item">
           <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
