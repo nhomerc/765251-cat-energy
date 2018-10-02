@@ -1,0 +1,39 @@
+.main-nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav--show {
+  display: block;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 24px 0;
+  text-align: center;
+
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--active {
+  border-bottom: 1px solid #68b738;
+}

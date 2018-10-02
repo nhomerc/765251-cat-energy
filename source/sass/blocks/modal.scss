@@ -1,0 +1,25 @@
+.modal__wrapper {
+  position: relative;
+
+  display: none;
+  width: 160px;
+  margin: 0 auto;
+  padding: 30px;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/18x18.png");
+  background-repeat: no-repeat;
+}
+

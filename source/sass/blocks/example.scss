@@ -1,0 +1,175 @@
+.example {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 38px;
+
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 18px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__item {
+  position: relative;
+
+  width: 124px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+
+.example__item--weight {
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: -25%;
+    transform: translate(-50%);
+
+    content: "снижение веса";
+
+    width: 82px;
+
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+
+    background-color: #f2f2f2;
+  }
+}
+
+.example__item--days {
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: -25%;
+    transform: translate(-50%);
+
+    content: "затрачено времени";
+
+    width: 82px;
+
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+
+    background-color: #f2f2f2;
+  }
+}
+
+.example__text-cost {
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__comparison {
+  position: relative;
+
+  width: 320px;
+  height: 240px;
+}
+
+.example__picture {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.example__picture--show {
+  display: block;
+}
+
+.example__toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin: 0 auto;
+}
+
+.example__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+}
+
+.example__slider {
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  appearance: none;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  background: #ffffff;
+  outline: none;
+  transition: 0.2s;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+}
+
+.example__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 42px;
+  height: 6px;
+
+  background: #4caf50;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.example__slider::-moz-range-thumb {
+  width: 35px;
+  height: 6px;
+
+  background: #4caf50;
+
+  cursor: pointer;
+}

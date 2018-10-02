@@ -1,0 +1,67 @@
+.promo {
+  padding-top: 29px;
+  padding-bottom: 22px;
+
+  background-image: url("../img/320x305.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  min-width: 87.5%;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+
+  font-size: 36px;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: 36px;
+  text-align: center;
+}
+
+.promo__tagline {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  outline: 1px solid rebeccapurple;
+}
+
+.promo__link {
+  text-decoration: none;
+}
+
+.button {
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color:rgba(255, 255, 255, 0.3);
+  }
+}
+
+.promo__button {
+  display: block;
+  margin: 0 auto;
+}
