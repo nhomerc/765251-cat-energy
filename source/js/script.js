@@ -55,4 +55,3 @@ if (document.querySelector(".catalog__order")) {
     modalWindow.classList.add("modal__wrapper--show");
   })
 }
-
