@@ -24,12 +24,16 @@ showHideButton.addEventListener("click", function(evt) {
 
 afterButton.addEventListener("click", function(next) {
   next.preventDefault();
+  afterButton.classList.add("example__button--active");
+  beforeButton.classList.remove("example__button--active");
   beforeImg.classList.remove("example__picture--show");
   afterImg.classList.add("example__picture--show");
 })
 
 beforeButton.addEventListener("click", function(next) {
   next.preventDefault();
+  afterButton.classList.remove("example__button--active");
+  beforeButton.classList.add("example__button--active");
   afterImg.classList.remove("example__picture--show");
   beforeImg.classList.add("example__picture--show");
 })

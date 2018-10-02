@@ -59,22 +59,22 @@
   height: 50px;
   content: "";
 
-  background-image: url("../img/50x51.png");
+  background-image: url("../img/icon-cat-slim.svg"), url("../img/ellipse.svg");
   background-repeat: no-repeat;
-  outline: 1px solid rebeccapurple;
+  background-position: center 0;
 }
 
 .program__subtitle--gathering::before {
   position: absolute;
-  left: 0;
+  left: -7px;
 
-  width: 50px;
+  width: 67px;
   height: 50px;
   content: "";
 
-  background-image: url("../img/50x51.png");
+  background-image: url("../img/icon-cat-pro.svg"), url("../img/ellipse.svg");
   background-repeat: no-repeat;
-  outline: 1px solid rebeccapurple;
+  background-position: center center;
 }
 
 .program__link {
@@ -98,8 +98,19 @@
     height: 11px;
     content: "";
 
-    background-image: url("../img/24x11.png");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    outline: 1px solid rebeccapurple;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program__link:hover::after {
+  right: -46px;
+
+  width: 32px;
+
+  background-image: url("../img/icon-right-arrow-verylong.svg");
 }

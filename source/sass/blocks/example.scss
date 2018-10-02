@@ -131,12 +131,22 @@
 }
 
 .example__button {
+  padding: 0;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   border: none;
   background: transparent;
+
+  &--active {
+    border-bottom: 1px dotted #989898;
+  }
+
+  &:hover {
+    border-bottom: 1px solid #989898;
+  }
 }
 
 .example__slider {

@@ -14,7 +14,7 @@
     <h1 class="visually-hidden">Магазин здорового питания Вашего кота</h1>
     <div class="header__wrapper">
       <a class="header__link" href="#">
-        <img class="header__logo" src="img/191x39.png" alt="Логотип Кэт энерджи" width="191">
+        <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" width="191">
       </a>
       <button class="header__menu-button header__menu-button--open header__menu-button--hidden" type="button"></button>
     </div>
@@ -39,7 +39,7 @@
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__tagline">Занялся собой? Займись котом!</p>
       </div>
-      <img class="promo__picture" src="img/280x270.png" alt="Корм для котов">
+      <img class="promo__picture" src="img/index-can-mobile@1x.png" alt="Корм для котов">
       <a class="promo__link" href="form.html">
         <button class="button promo__button button--small-font" type="button">Подобрать программу</button>
       </a>
@@ -103,7 +103,7 @@
         <img class="example__picture example__picture--after" src="img/after-mobile.png" alt="Кот до и после">
       </div>
       <div class="example__toggle">
-        <button class="example__button example__button--before" type="button">Было</button>
+        <button class="example__button example__button--before example__button--active" type="button">Было</button>
         <div class="slider__wrapper">
           <input class="example__slider" type="range" min="1" max="100" value="10">
         </div>
@@ -125,23 +125,29 @@
 
   <footer class="footer">
     <a class="footer__link" href="index.html">
-      <img class="footer__title" src="img/128x24.png" alt="Логотип компании">
+      <img class="footer__title" src="img/logo-footer.svg" alt="Логотип компании" width="128">
     </a>
     <div class="social footer__social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/">
-            <img class="social__img" src="img/22x12.png" alt="В Контакте">
+            <svg class="footer__icon" width="22" height="12">
+              <use xlink:href="img/sprite.svg#vk-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com/?hl=ru">
-            <img class="social__img" src="img/16x16.png" alt="Инстаграмм">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#insta-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://ru-ru.facebook.com/">
-            <img class="social__img" src="img/10x19.png" alt="Фейсбук">
+            <svg class="footer__icon" width="10" height="19">
+              <use xlink:href="img/sprite.svg#fb-mobile"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -153,7 +159,10 @@
         </li>
         <li class="copyrights__item">
           <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyrights__img" src="img/27x34.png" alt="Логотип Академии">
+            <svg class="footer__icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+            <!-- <img class="copyrights__img" src="img/htmlacademy.svg" alt="Логотип Академии" width="27"> -->
           </a>
         </li>
       </ul>

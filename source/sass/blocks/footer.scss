@@ -9,6 +9,14 @@
   display: block;
   margin: 0 auto;
   padding: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__social {
@@ -45,4 +53,20 @@
   color: #000000;
 
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
