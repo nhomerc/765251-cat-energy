@@ -7,7 +7,6 @@
 .additional__title {
   position: relative;
 
-  display: inline-block;
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
@@ -21,7 +20,7 @@
   &::after {
     position: absolute;
     top: 12px;
-    left: 100%;
+    right: -20px;
 
     width: 46px;
     height: 3;
@@ -66,4 +65,7 @@
 .additional__button {
   display: block;
   margin: 0 auto;
+
+  text-align: center;
+  text-decoration: none;
 }

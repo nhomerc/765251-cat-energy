@@ -23,7 +23,7 @@
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 20px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
@@ -54,7 +54,7 @@
     width: 30px;
     height: 30px;
 
-    background-image: url("../img/30x30.png");
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
 
     transform: translateX(-50%);
@@ -96,4 +96,7 @@
 
 .catalog__order {
   align-self: center;
+
+  text-align: center;
+  text-decoration: none;
 }
