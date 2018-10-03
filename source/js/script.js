@@ -6,7 +6,8 @@ var beforeImg = document.querySelector(".example__picture--before");
 var afterImg = document.querySelector(".example__picture--after");
 var modalBtn = document.querySelector(".modal__button");
 var modalWindow = document.querySelector(".modal__wrapper");
-var orderBtn = document.querySelector(".catalog__order");
+var orderBtn = document.querySelectorAll(".button--order");
+var allProductsBtn = document.querySelector(".button--all");
 
 mainMenu.classList.toggle("main-nav--show");
 showHideButton.classList.toggle("header__menu-button--open");
@@ -49,9 +50,15 @@ if (document.querySelector(".modal__button")) {
   })
 }
 
-if (document.querySelector(".catalog__order")) {
-  orderBtn.addEventListener("click", function (showModal) {
-    showModal.preventDefault();
+for (var i = 0; i < orderBtn.length; i++) {
+  orderBtn[i].onclick = function(order) {
+    order.preventDefault();
     modalWindow.classList.add("modal__wrapper--show");
+  }
+}
+
+if (document.querySelector(".button--all")) {
+  allProductsBtn.addEventListener("click", function(ajax) {
+    ajax.preventDefault();
   })
 }
