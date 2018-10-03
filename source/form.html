@@ -83,17 +83,26 @@
           </ul>
         </fieldset>
         <fieldset class="contacts">
-          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+          <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <label class="contacts__lable" for="email">E-mail:*
+              <label class="contacts__lable" for="email">E-mail:*</label>
+              <div class="contacts__item-wrapper">
                 <input class="contacts__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
-              </label>
+                <svg class="contacts__icon" width="17" height="13">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
             </li>
             <li class="contacts__item">
-              <label class="contacts__lable" for="phone">Телефон:*
-                <input class="contacts__input" id="phone" type="number" placeholder="8 (960) 900-60-90" required>
-              </label>
+              <label class="contacts__lable" for="phone">Телефон:*</label>
+              <div class="contacts__item-wrapper">
+                <input class="contacts__input contacts__input--phone" id="phone" type="number" placeholder="8 (960) 900-60-90"
+                  required>
+                <svg class="contacts__icon contacts__icon--phone" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
             </li>
           </ul>
         </fieldset>
