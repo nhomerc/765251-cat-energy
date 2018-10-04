@@ -34,6 +34,8 @@
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
 
+  transition: 0.3s;
+
   &--hidden {
     display: none;
   }

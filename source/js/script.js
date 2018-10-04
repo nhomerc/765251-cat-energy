@@ -24,8 +24,8 @@ showHideButton.addEventListener("click", function (evt) {
 })
 
 if (document.querySelector(".example__button--after")) {
-  afterButton.addEventListener("click", function (next) {
-    next.preventDefault();
+  afterButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
     afterButton.classList.add("example__button--active");
     beforeButton.classList.remove("example__button--active");
     beforeImg.classList.remove("example__picture--show");
@@ -34,8 +34,8 @@ if (document.querySelector(".example__button--after")) {
 }
 
 if (document.querySelector(".example__button--before")) {
-  beforeButton.addEventListener("click", function (next) {
-    next.preventDefault();
+  beforeButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
     afterButton.classList.remove("example__button--active");
     beforeButton.classList.add("example__button--active");
     afterImg.classList.remove("example__picture--show");
@@ -44,21 +44,21 @@ if (document.querySelector(".example__button--before")) {
 }
 
 if (document.querySelector(".modal__button")) {
-  modalBtn.addEventListener("click", function (closeModal) {
-    closeModal.preventDefault();
+  modalBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
     modalWindow.classList.remove("modal__wrapper--show");
   })
 }
 
 for (var i = 0; i < orderBtn.length; i++) {
-  orderBtn[i].onclick = function(order) {
-    order.preventDefault();
+  orderBtn[i].onclick = function(evt) {
+    evt.preventDefault();
     modalWindow.classList.add("modal__wrapper--show");
   }
 }
 
 if (document.querySelector(".button--all")) {
-  allProductsBtn.addEventListener("click", function(ajax) {
-    ajax.preventDefault();
+  allProductsBtn.addEventListener("click", function(evt) {
+    evt.preventDefault();
   })
 }

@@ -50,7 +50,7 @@
     border-color: #444444;
   }
 
-  &:invalid {
+  &:invalid:not(:empty) {
     border-color: #ff8282;
   }
 }
