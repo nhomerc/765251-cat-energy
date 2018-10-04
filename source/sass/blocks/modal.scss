@@ -1,0 +1,31 @@
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+  width: 160px;
+  padding: 30px;
+
+  background-color: #f2f2f2;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 18px;
+  height: 18px;
+
+  border: none;
+
+  background: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}

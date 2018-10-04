@@ -5,22 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <header class="header">
     <h1 class="visually-hidden">Магазин здорового питания Вашего кота</h1>
-    <div class="logo">
-      <a class="logo__link" href="#">
-        <img class="logo__picture" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
-        <img class="logo__title" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
+    <div class="header__wrapper">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" width="191">
       </a>
+      <button class="header__menu-button header__menu-button--open header__menu-button--hidden" type="button"></button>
     </div>
-    <button class="header__menu-button" type="button"></button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--show">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -37,8 +35,10 @@
 
   <main class="main">
     <section class="private">
-      <h2 class="private__title">Подбор программы</h2>
-      <p class="private__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="private__wrapper">
+        <h2 class="private__title">Подбор программы</h2>
+        <p class="private__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="data">
           <ul class="data__list">
@@ -57,41 +57,52 @@
           </ul>
         </fieldset>
         <fieldset class="program-selection">
-          <form class="program-selection__form">
-            <ul class="program-selection__list">
-              <li class="program-selection__item">
-                <label class="program-selection__label" for="losing">
-                  <input class="program-selection__input" id="losing" type="radio" name="selector" value="losing-weight"
-                    checked>Похудение
-                </label>
-              </li>
-              <li class="program-selection__item">
-                <label class="program-selection__label" for="gathering">
-                  <input class="program-selection__input" id="gathering" type="radio" name="selector" value="mass-gathering">Набор
-                  массы
-                </label>
-              </li>
-              <li class="program-selection__item">
-                <label class="program-selection__label" for="advice">
-                  <input class="program-selection__input" id="advice" type="radio" name="selector" value="need-advice">Не
-                  знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </form>
-        </fieldset>
-        <fieldset class="contacts">
-          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <label class="contacts__lable" for="email">E-mail:*
-                <input class="contacts__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+          <ul class="program-selection__list">
+            <li class="program-selection__item">
+              <label class="program-selection__label" for="losing">
+                <input class="program-selection__input" id="losing" type="radio" name="selector" value="losing-weight"
+                  checked>
+                <span class="program-selection__checkmark"></span>
+                Похудение
               </label>
             </li>
-            <li class="contacts__item">
-              <label class="contacts__lable" for="phone">Телефон:*
-                <input class="contacts__input" id="phone" type="number" placeholder="8 (960) 900-60-90" required>
+            <li class="program-selection__item">
+              <label class="program-selection__label" for="gathering">
+                <input class="program-selection__input" id="gathering" type="radio" name="selector" value="mass-gathering">
+                <span class="program-selection__checkmark"></span>
+                Набор массы
               </label>
+            </li>
+            <li class="program-selection__item">
+              <label class="program-selection__label" for="advice">
+                <input class="program-selection__input" id="advice" type="radio" name="selector" value="need-advice">
+                <span class="program-selection__checkmark"></span>
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contacts">
+          <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__lable" for="email">E-mail:*</label>
+              <div class="contacts__item-wrapper">
+                <input class="contacts__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="contacts__icon" width="17" height="13">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__lable" for="phone">Телефон:*</label>
+              <div class="contacts__item-wrapper">
+                <input class="contacts__input contacts__input--phone" id="phone" type="number" placeholder="8 (960) 900-60-90"
+                  required>
+                <svg class="contacts__icon contacts__icon--phone" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -124,38 +135,43 @@
       </form>
     </section>
     <section class="invite">
-      <div class="invite__wrapper">
+      <div class="invite__wrapper invite__wrapper--grey">
         <h3 class="invite__subtitle">Приглашаем к сотрудничеству диллеров!</h3>
         <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="invite__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6135406594556!2d30.32286861339352!3d59.93869793395762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1537899483968"
-          width="800" height="600" frameborder="0" style="border:0;" allowfullscreen>
-        </iframe>
+        <iframe class="invite__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716199638!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538298327326"
+          width="1345" height="645" frameborder="0" style="border:0;" allowfullscreen></iframe>
         <span class="visually-hidden">Карта с адресом</span>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <a class="footer__link" href="#">
-      <img class="footer__title" src="" alt="Логотип компании">
+    <a class="footer__link" href="index.html">
+      <img class="footer__title" src="img/logo-footer.svg" alt="Логотип компании" width="128">
     </a>
     <div class="social footer__social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/">
-            <img class="social__img" src="" alt="В Контакте">
+            <svg class="footer__icon" width="22" height="12">
+              <use xlink:href="img/sprite.svg#vk-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com/?hl=ru">
-            <img class="social__img" src="" alt="Инстаграмм">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#insta-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://ru-ru.facebook.com/">
-            <img class="social__img" src="" alt="Фейсбук">
+            <svg class="footer__icon" width="10" height="19">
+              <use xlink:href="img/sprite.svg#fb-mobile"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -163,16 +179,19 @@
     <div class="copyrights footer__copyrights">
       <ul class="copyrights__list">
         <li class="copyrights__item">
-          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
         <li class="copyrights__item">
           <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyrights__img" src="" alt="Логотип Академии">
+            <svg class="footer__icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </li>
       </ul>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
