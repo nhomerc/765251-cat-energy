@@ -109,30 +109,45 @@
           </ul>
         </fieldset>
         <fieldset class="comment">
+          <div class="comment__header">
+            <h3 class="comment__title">Комментарий</h3>
+          </div>
           <textarea class="comment__textarea" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
         </fieldset>
         <fieldset class="additionally">
-          <legend class="additionally__title">Дополнительно</legend>
+          <div class="additionally__header">
+            <h3 class="additionally__title">Дополнительно</h3>
+          </div>
           <ul class="additionally__list">
             <li class="additionally__item">
-              <input class="additionally__input" id="sweetener" type="checkbox" value="sweetener" checked>
-              <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+              <label class="additionally__label" for="sweetener">
+                <input class="additionally__input" id="sweetener" type="checkbox" value="sweetener" checked>Сахарозаменитель
+                <span class="additionally__checkmark"></span>
+              </label>
             </li>
             <li class="additionally__item">
-              <input class="additionally__input" id="water" type="checkbox" value="water">
-              <label class="additionally__label" for="water">Питьевая вода</label>
+              <label class="additionally__label" for="water">
+                <input class="additionally__input" id="water" type="checkbox" value="water">Питьевая вода
+                <span class="additionally__checkmark"></span>
+              </label>
             </li>
             <li class="additionally__item">
-              <input class="additionally__input" id="milk" type="checkbox" value="milk">
-              <label class="additionally__label" for="milk">Молоко</label>
+              <label class="additionally__label" for="milk">
+                <input class="additionally__input" id="milk" type="checkbox" value="milk">Молоко
+                <span class="additionally__checkmark"></span>
+              </label>
             </li>
             <li class="additionally__item">
-              <input class="additionally__input" id="vitamin" type="checkbox" value="vitamin">
-              <label class="additionally__label" for="vitamin">Витамины</label>
+              <label class="additionally__label" for="vitamin">
+                <input class="additionally__input" id="vitamin" type="checkbox" value="vitamin">Витамины
+                <span class="additionally__checkmark"></span>
+              </label>
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button" type="submit">Отправить заявку</button>
+        <div class="form__btn">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+        </div>
         <p class="form__description"><sup>*</sup> &mdash; Обязательные поля</p>
       </form>
     </section>

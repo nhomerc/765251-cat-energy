@@ -92,6 +92,10 @@
   &:invalid:not(:empty) {
     border-color: #ff8282;
   }
+
+  &:invalid:focus {
+    border-color: #ff8282;
+  }
 }
 
 .contacts__icon {
@@ -113,5 +117,9 @@
 }
 
 .contacts__input:invalid:not(:empty) + .contacts__icon {
+  fill: #ff8282;
+}
+
+.contacts__input:invalid:focus + .contacts__icon {
   fill: #ff8282;
 }

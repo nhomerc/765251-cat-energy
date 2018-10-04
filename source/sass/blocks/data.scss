@@ -53,4 +53,8 @@
   &:invalid:not(:empty) {
     border-color: #ff8282;
   }
+
+  &:invalid:focus {
+    border-color: #ff8282;
+  }
 }
