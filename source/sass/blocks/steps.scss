@@ -57,6 +57,10 @@
   line-height: 18px;
 }
 
+.steps__br--hidden {
+  display: none;
+}
+
 .steps__description--functional::before {
   position: absolute;
   left: 0;
@@ -149,10 +153,14 @@
   }
 
   .steps__description {
-    width: 75.468%;
+    width: 77%;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .steps__br--hidden {
+    display: block;
   }
 
   .steps__description--functional::before {

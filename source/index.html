@@ -88,6 +88,7 @@
         </li>
         <li class="steps__item steps__item--late">
           <p class="steps__description steps__description--late">Уже через месяц наслаждайтесь изменениями к лучшему
+            <br class="steps__br steps__br--hidden">
             вашего питомца!</p>
           <span class="steps__number steps__number--hidden">4</span>
         </li>
@@ -99,27 +100,43 @@
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
           Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-        <ul class="example__list">
-          <li class="example__item example__item--weight">
-            5 кг
-          </li>
-          <li class="example__item example__item--days">
-            60 дней
-          </li>
-        </ul>
-        <p class="example__text-cost">Затраты на питание: 15 000 руб.</p>
-      </div>
-      <div class="example__comparison">
-        <img class="example__picture example__picture--before" src="img/before-mobile.png" alt="Кот до и после">
-        <img class="example__picture example__picture--after" src="img/after-mobile.png" alt="Кот до и после">
-      </div>
-      <div class="example__toggle">
-        <button class="example__button example__button--before example__button--active" type="button">Было</button>
-        <div class="slider__wrapper">
-          <input class="example__slider" type="range" min="1" max="100" value="10">
+          часов в день.
+        </p>
+        <div class="example__eg">
+          <ul class="example__list">
+            <li class="example__item example__item--weight">
+              5 кг
+            </li>
+            <li class="example__item example__item--days">
+              60 дней
+            </li>
+          </ul>
+          <div class="example__cost">
+            <p class="example__text">Затраты на питание: </p>
+            <p class="example__expenses">15 000 руб.</p>
+          </div>
         </div>
-        <button class="example__button example__button--after" type="button">Стало</button>
+      </div>
+      <div class="example__cats">
+        <div class="example__comparison">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img class="example__picture example__picture--before" src="img/before-mobile.png" alt="Кот до и после">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+            <img class="example__picture example__picture--after" src="img/after-mobile.png" alt="Кот до и после">
+          </picture>
+        </div>
+        <div class="example__toggle">
+          <button class="example__button example__button--before example__button--active" type="button">Было</button>
+          <div class="slider__wrapper">
+            <input class="example__slider" type="range" min="1" max="100" value="10">
+          </div>
+          <button class="example__button example__button--after" type="button">Стало</button>
+        </div>
       </div>
     </section>
     <section class="invite">
