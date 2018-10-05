@@ -68,3 +68,49 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .promo {
+    position: relative;
+
+    padding: 0 30px;
+
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    padding-left: 90px;
+  }
+
+  .promo__title {
+    width: 430px;
+    margin-bottom: 35px;
+
+    font-size: 60px;
+    color: #000000;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__tagline {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    color: #000000;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+
+    font-size: 20px;
+  }
+
+  .button {
+    min-width: 245px;
+    padding: 16px 27px;
+  }
+}
