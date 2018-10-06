@@ -30,6 +30,14 @@
   line-height: 20px;
 }
 
+.invite__street {
+  margin: 0;
+}
+
+.invite__city {
+  margin: 0;
+}
+
 .invite__map {
   background-image: url("../img/bg-map-mobile@1x.png");
 }
@@ -37,4 +45,39 @@
 .invite__iframe {
   width: 100%;
   height: 362px;
+}
+
+@media (min-width: 768px) {
+  .invite__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 71px;
+    padding-top: 66px;
+    padding-bottom: 50px;
+  }
+
+  .invite__subtitle {
+    width: 170px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invite__address {
+    width: 170px;
+
+    text-align: right;
+  }
+
+  .invite__street {
+    margin-bottom: 20px;
+  }
+
+  .invite__iframe {
+    height: 400px;
+  }
+
+  .invite__map {
+    background-image: ("../img/bg-map-tablet@1x.png");
+  }
 }
