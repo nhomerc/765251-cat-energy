@@ -1,14 +1,18 @@
 .gifts {
-  width: 280px;
-  height: 289px;
-  margin: 0 auto;
   margin-bottom: 35px;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+.gifts__wrapper {
+  width: 100%;
   padding-top: 190px;
+  padding-bottom: 43px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-
-  box-sizing: border-box;
+  background-size: cover;
 }
 
 .gifts__description {
@@ -37,5 +41,43 @@
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     fill: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .gifts {
+    width: 100%;
+    margin-bottom: 76px;
+    padding: 0 30px;
+  }
+
+  .gifts__wrapper {
+    padding-top: 75px;
+    padding-bottom: 67px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .gifts__description {
+    width: 170px;
+    margin: 0;
+    padding-left: 423px;
+
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 91px;
+      transform: translateY(-50%);
+
+      width: 55px;
+      height: 60px;
+
+      content: "";
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      fill: #ffffff;
+    }
   }
 }

@@ -275,34 +275,42 @@
         </div>
         <ul class="additional__list">
           <li class="additional__item">
-            <h3 class="additional__subtitle">Сахарозаменитель</h3>
-            <div class="additional__description">
-              <p class="additional__boxing">1 упаковка (100 г)</p>
-              <p class="additional__cost">100 P.</p>
+            <div class="additional__descriptions">
+              <h3 class="additional__subtitle">Сахарозаменитель</h3>
+              <div class="additional__description">
+                <p class="additional__boxing">1 упаковка (100 г)</p>
+                <p class="additional__cost">100 P.</p>
+              </div>
             </div>
             <a class="button additional__button button--order" href="order.html">Заказать</a>
           </li>
           <li class="additional__item">
-            <h3 class="additional__subtitle">Питьевая вода</h3>
-            <div class="additional__description">
-              <p class="additional__boxing">5 литров</p>
-              <p class="additional__cost">50 P.</p>
+            <div class="additional__descriptions">
+              <h3 class="additional__subtitle">Питьевая вода</h3>
+              <div class="additional__description">
+                <p class="additional__boxing">5 литров</p>
+                <p class="additional__cost">50 P.</p>
+              </div>
             </div>
             <a class="button additional__button button--order" href="order.html">Заказать</a>
           </li>
           <li class="additional__item">
-            <h3 class="additional__subtitle">Молоко</h3>
-            <div class="additional__description">
-              <p class="additional__boxing">1 литр</p>
-              <p class="additional__cost">100 P.</p>
+            <div class="additional__descriptions">
+              <h3 class="additional__subtitle">Молоко</h3>
+              <div class="additional__description">
+                <p class="additional__boxing">1 литр</p>
+                <p class="additional__cost">100 P.</p>
+              </div>
             </div>
             <a class="button additional__button button--order" href="order.html">Заказать</a>
           </li>
           <li class="additional__item">
-            <h3 class="additional__subtitle">Витамины</h3>
-            <div class="additional__description">
-              <p class="additional__boxing">1 упаковка (30 г)</p>
-              <p class="additional__cost">300 P.</p>
+            <div class="additional__descriptions">
+              <h3 class="additional__subtitle">Витамины</h3>
+              <div class="additional__description">
+                <p class="additional__boxing">1 упаковка (30 г)</p>
+                <p class="additional__cost">300 P.</p>
+              </div>
             </div>
             <a class="button additional__button button--order" href="order.html">Заказать</a>
           </li>
@@ -310,12 +318,17 @@
       </div>
     </section>
     <section class="gifts">
-      <p class="gifts__description">Закажите все <br>и получите чехол для кота в подарок!</p>
+      <div class="gifts__wrapper">
+        <p class="gifts__description">Закажите все <br>и получите чехол для кота в подарок!</p>
+      </div>
     </section>
     <section class="invite">
       <div class="invite__wrapper invite__wrapper--grey">
-        <h3 class="invite__subtitle">Приглашаем к сотрудничеству диллеров!</h3>
-        <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h3 class="invite__subtitle">Приглашаем <br> к сотрудничеству диллеров!</h3>
+        <div class="invite__address">
+          <p class="invite__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="invite__city">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="invite__map">
         <iframe class="invite__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716199638!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538298327326"
@@ -333,21 +346,21 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/">
-            <svg class="footer__icon" width="22" height="12">
+            <svg class="footer__icon footer__icon--vk">
               <use xlink:href="img/sprite.svg#vk-mobile"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com/?hl=ru">
-            <svg class="footer__icon" width="16" height="16">
+            <svg class="footer__icon footer__icon--insta">
               <use xlink:href="img/sprite.svg#insta-mobile"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://ru-ru.facebook.com/">
-            <svg class="footer__icon" width="10" height="19">
+            <svg class="footer__icon footer__icon--fb">
               <use xlink:href="img/sprite.svg#fb-mobile"></use>
             </svg>
           </a>
@@ -357,7 +370,8 @@
     <div class="copyrights footer__copyrights">
       <ul class="copyrights__list">
         <li class="copyrights__item">
-          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyrights__link copyrights__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a>
         </li>
         <li class="copyrights__item">
           <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
