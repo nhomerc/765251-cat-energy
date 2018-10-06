@@ -164,7 +164,7 @@
   display: inline-block;
   width: 84px;
   height: 14px;
-  appearance: none;
+  padding: 0 6px;
   margin: 0 auto;
 
   vertical-align: middle;
@@ -175,6 +175,7 @@
   border-radius: 7px;
   outline: none;
 
+  appearance: none;
   transition: 0.2s;
 }
 
@@ -351,13 +352,25 @@
     height: 34px;
     margin-top: -14px;
 
-    border: 13px solid #ffffff;
+    border: 1px solid #cfcfcf;
     border-radius: 50%;
 
-    background: #68b738;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 0 0 2px rgba(13, 13, 13, 0.15);
+    background-color: #ffffff;
+    background-image: url("../img/slider-control.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 2px 2px rgba(13, 13, 13, 0.15);
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
   }
 
   .example__slider::-moz-range-track {
@@ -372,15 +385,28 @@
   }
 
   .example__slider::-moz-range-thumb {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 0 0 2px rgba(13, 13, 13, 0.15);
-    border: 13px solid #ffffff;
-    height: 34px;
     width: 34px;
+    height: 34px;
+
+    border: 1px solid #cfcfcf;
     border-radius: 50%;
-    background: #68b738;
+
+    background-color: #ffffff;
+    background-image: url("../img/slider-control.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
     cursor: pointer;
 
-    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 3px 2px 2px rgba(13, 13, 13, 0.15);
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
   }
 
   .example__slider::-ms-track {
@@ -411,18 +437,29 @@
   }
 
   .example__slider::-ms-thumb {
-    width: 8px;
-    height: 8px;
+    width: 34px;
+    height: 34px;
     margin-top: -1px;
 
-    background: #68b738;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
 
-    border-radius: 50px;
-    border: 13px solid #ffffff;
+    background-color: #ffffff;
+    background-image: url("../img/slider-control.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 0 0 2px rgba(13, 13, 13, 0.15);
 
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 2px 2px rgba(13, 13, 13, 0.15);
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
   }
 
   .example__slider:focus::-ms-fill-lower {
