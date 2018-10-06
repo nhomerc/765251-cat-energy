@@ -47,8 +47,56 @@
   margin: 0;
   padding: 15px;
 
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
   border-color: #e6e6e6;
   box-sizing: border-box;
 
   resize: none;
+}
+
+@media (min-width: 768px) {
+  .comment {
+    padding: 0 30px;
+  }
+
+  .comment__header {
+    margin-bottom: 71px;
+
+    &::after {
+      top: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -30px;
+
+      width: 30px;
+      height: 3px;
+
+      content: "";
+      background-color: #68b738;
+    }
+  }
+
+  .comment__title {
+    padding: 0 40px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__field {
+    padding: 0 40px;
+  }
+
+  .comment__textarea {
+    padding: 18px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

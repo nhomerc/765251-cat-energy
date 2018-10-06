@@ -26,3 +26,29 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .private {
+    padding: 0;
+  }
+
+  .private__wrapper {
+    margin-bottom: 69px;
+    padding: 0 30px;
+  }
+
+  .private__title {
+    margin-bottom: 46px;
+
+    font-size: 60px;
+  }
+
+  .private__description {
+    width: 347px;
+    margin-left: 39px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

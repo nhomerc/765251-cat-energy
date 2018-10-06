@@ -30,6 +30,10 @@
 
   font-size: 16px;
   line-height: 18px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program-selection__checkmark {
@@ -80,4 +84,46 @@
 
 .program-selection__input:checked ~ .program-selection__checkmark::after {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .program-selection {
+    margin-bottom: 77px;
+    padding: 0 71px;
+
+    border-bottom: none;
+  }
+
+  .program-selection__list {
+    padding: 0;
+    padding-top: 36px;
+    padding-bottom: 33px;
+
+    border: 1px solid #e6e6e6;
+  }
+
+  .program-selection__item {
+    margin-bottom: 36px;
+  }
+
+  .program-selection__label {
+    padding-left: 88px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-selection__checkmark {
+    left: 28px;
+
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      left: 11px;
+
+      width: 18px;
+      height: 18px;
+    }
+  }
 }

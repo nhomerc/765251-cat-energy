@@ -29,6 +29,7 @@
 
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .data__input {
@@ -41,6 +42,10 @@
 
   border: 1px solid #e6e6e6;
   outline: none;
+
+  &::placeholder {
+    color: #444444;
+  }
 
   &:hover {
     border-color: #cdcdcd;
@@ -56,5 +61,35 @@
 
   &:invalid:focus {
     border-color: #ff8282;
+  }
+}
+
+@media (min-width: 768px) {
+  .data {
+    margin-bottom: 72px;
+    padding: 0 30px;
+
+    border-bottom: none;
+  }
+
+  .data__list {
+    padding: 0 40px;
+  }
+
+  .data__item {
+    margin-bottom: 20px;
+  }
+
+  .data__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .data__input {
+    padding: 17px 0;
+    padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

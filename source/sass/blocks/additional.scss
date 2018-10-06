@@ -9,9 +9,7 @@
 .additional__header {
   position: relative;
 
-  padding-bottom: 30px;
-
-  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 30px;
 
   &::after {
     position: absolute;
@@ -55,6 +53,10 @@
   padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .additional__subtitle {
@@ -92,19 +94,13 @@
   }
 
   .additional__header {
-    padding-bottom: 75px;
+    margin-bottom: 75px;
 
     border-bottom: none;
-  }
-
-  .additional__title {
-    padding: 0 37px;
-
-    font-size: 36px;
 
     &::before {
       position: absolute;
-      top: 12px;
+      top: 50%;
       left: -30px;
 
       width: 30px;
@@ -113,6 +109,17 @@
       content: "";
       background-color: #68b738;
     }
+
+    &::after {
+      top: 50%;
+    }
+  }
+
+  .additional__title {
+    padding: 0 37px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additional__item {
