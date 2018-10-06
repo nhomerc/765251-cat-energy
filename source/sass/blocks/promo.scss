@@ -112,5 +112,7 @@
   .button {
     min-width: 245px;
     padding: 16px 27px;
+
+    box-sizing: border-box;
   }
 }
