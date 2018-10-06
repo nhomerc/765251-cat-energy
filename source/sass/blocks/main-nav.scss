@@ -15,17 +15,22 @@
 }
 
 .main-nav__item {
-  padding: 24px 0;
   text-align: center;
 
   border-bottom: 1px solid #e6e6e6;
 }
 
 .main-nav__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 18px;
+
   font-size: 20px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  box-sizing: border-box;
 
   &:hover {
     opacity: 0.6;
@@ -36,8 +41,16 @@
   }
 }
 
-.main-nav__link--active {
+.main-nav__link--active .main-nav__name {
   border-bottom: 1px solid #68b738;
+}
+
+.main-nav__name {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 5px;
+
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
