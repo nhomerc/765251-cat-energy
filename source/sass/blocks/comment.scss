@@ -101,3 +101,30 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 70px;
+    padding: 0 70px;
+  }
+
+  .comment__header {
+    margin-bottom: 71px;
+
+    &::after {
+      top: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -70px;
+
+      width: 70px;
+      height: 3px;
+
+      content: "";
+      background-color: $color-header;
+    }
+  }
+}

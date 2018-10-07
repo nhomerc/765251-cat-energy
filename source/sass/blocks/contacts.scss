@@ -182,7 +182,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     margin-bottom: 71px;
-    padding: 0;
+    padding: 0 70px;
   }
 
   .contacts__header {
@@ -199,5 +199,19 @@
       content: "";
       background-color: $color-header;
     }
+  }
+
+  .contacts__title {
+    padding: 0 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 46.72%;
+    margin-bottom: 0;
   }
 }
