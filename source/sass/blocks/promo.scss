@@ -15,7 +15,7 @@
 
   font-size: 36px;
   font-weight: normal;
-  color: #ffffff;
+  color: $color-bg-default;
   line-height: 36px;
   text-align: center;
 }
@@ -25,7 +25,7 @@
   margin-bottom: 29px;
   padding: 0;
 
-  color: #ffffff;
+  color: $color-bg-default;
   text-align: center;
 }
 
@@ -45,22 +45,22 @@
   padding-bottom: 11px;
 
   font-size: 16px;
-  color: #ffffff;
+  color: $color-bg-default;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
   border: none;
-  background-color: #68b738;
+  background-color: $color-btn;
 
   transition: 0.3s;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $color-btn-hvr;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $color-btn-act;
   }
 }
 
@@ -69,7 +69,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo {
     position: relative;
 
@@ -87,7 +87,7 @@
     margin-bottom: 35px;
 
     font-size: 60px;
-    color: #000000;
+    color: $color-font;
     line-height: 60px;
     text-align: left;
   }
@@ -96,7 +96,7 @@
     margin-bottom: 20px;
 
     font-size: 20px;
-    color: #000000;
+    color: $color-font;
     line-height: 20px;
     text-align: left;
   }

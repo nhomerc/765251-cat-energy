@@ -2,13 +2,14 @@
   position: fixed;
   top: 0;
   left: 50%;
+  z-index: 34;
   transform: translateX(-50%);
 
   display: none;
   width: 160px;
   padding: 30px;
 
-  background-color: #f2f2f2;
+  background-color: $color-btn-all;
 
   &--show {
     display: block;

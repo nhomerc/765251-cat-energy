@@ -22,7 +22,7 @@
     height: 3px;
 
     content: "";
-    background-color: #68b738;
+    background-color: $color-header;
   }
 }
 
@@ -39,7 +39,7 @@
   font-weight: normal;
   line-height: 24px;
 
-  background-color: #ffffff;
+  background-color: $color-bg-default;
 }
 
 .comment__textarea {
@@ -51,13 +51,13 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  border-color: #e6e6e6;
+  border-color: $color-input;
   box-sizing: border-box;
 
   resize: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .comment {
     margin-bottom: 69px;
     padding: 0 30px;
@@ -79,7 +79,7 @@
       height: 3px;
 
       content: "";
-      background-color: #68b738;
+      background-color: $color-header;
     }
   }
 

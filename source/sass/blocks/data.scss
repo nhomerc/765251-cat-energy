@@ -4,7 +4,7 @@
   padding-bottom: 23px;
 
   border: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $color-block-bb;
 }
 
 .data__list {
@@ -40,31 +40,31 @@
   font-size: 16px;
   line-height: 18px;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $color-input;
   outline: none;
 
   &::placeholder {
-    color: #444444;
+    color: $color-input-act;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $color-input-hvr;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: $color-input-act;
   }
 
   &:invalid:not(:empty) {
-    border-color: #ff8282;
+    border-color: $color-input-err;
   }
 
   &:invalid:focus {
-    border-color: #ff8282;
+    border-color: $color-input-err;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .data {
     margin-bottom: 72px;
     padding: 0 30px;

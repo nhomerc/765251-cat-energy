@@ -9,7 +9,7 @@
   line-height: 60px;
   font-weight: normal;
 
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $color-block-bb;
 }
 
 .catalog__list {
@@ -25,7 +25,7 @@
   justify-content: space-between;
   padding: 0 20px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $color-block-bb;
 
   &:last-child {
     flex-direction: column;
@@ -50,7 +50,7 @@
   margin: 0 auto;
   margin-bottom: 26px;
 
-  fill: #d3d3d3;
+  fill: $color-plus;
 }
 
 .catalog__text {
@@ -58,7 +58,7 @@
   margin-bottom: 9px;
   padding: 0;
 
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-default;
   font-size: 12px;
   line-height: 16px;
 }
@@ -68,10 +68,10 @@
 
   color: #444444;
 
-  background-color: #f2f2f2;
+  background-color: $color-btn-all;
 
   &:hover {
-    background-color: #ebebeb;
+    background-color: $color-btn-all-act;
   }
 
   &:active {
@@ -91,7 +91,7 @@
   align-self: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog {
     margin-bottom: 71px;
   }
@@ -125,7 +125,7 @@
     padding-top: 165px;
     padding-bottom: 40px;
 
-    background-color: #f2f2f2;
+    background-color: $color-bg-gray;
 
     border-bottom: none;
     box-sizing: border-box;
@@ -134,10 +134,10 @@
       justify-content: flex-start;
       margin-bottom: 0;
       padding-top: 55px;
-      background-color: #ffffff;
+      background-color: $color-bg-default;
 
-      border-top: 1px solid #ededed;
-      border-bottom: 1px solid #ededed;
+      border-top: 1px solid $color-block-bb;
+      border-bottom: 1px solid $color-block-bb;
     }
 
     &:nth-child(7) {

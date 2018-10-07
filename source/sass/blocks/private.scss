@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .private {
     margin-bottom: 72px;
     padding: 0;

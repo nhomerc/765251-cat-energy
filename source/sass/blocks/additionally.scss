@@ -22,7 +22,7 @@
     height: 3px;
 
     content: "";
-    background-color: #68b738;
+    background-color: $color-header;
   }
 }
 
@@ -39,7 +39,7 @@
   font-weight: normal;
   line-height: 24px;
 
-  background-color: #ffffff;
+  background-color: $color-bg-default;
 }
 
 .additionally__list {
@@ -83,13 +83,13 @@
   height: 30px;
   width: 30px;
 
-  border: 1px solid #d1d1d1;
+  border: 1px solid $color-check-br;
 
   transform: translateY(-50%);
 }
 
 .additionally__label:hover .additionally__input ~ .additionally__checkmark {
-  border-color: #bcbcbc;
+  border-color: $color-check-act;
 }
 
 .additionally__checkmark::after {
@@ -120,7 +120,7 @@
   transform: translateY(-50%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .additionally {
     margin-bottom: 54px;
     padding: 0 30px;
@@ -142,7 +142,7 @@
       height: 3px;
 
       content: "";
-      background-color: #68b738;
+      background-color: $color-header;
     }
   }
 

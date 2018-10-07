@@ -4,7 +4,7 @@
   padding-top: 33px;
   padding-bottom: 38px;
 
-  background-color: #f2f2f2;
+  background-color: $color-bg-gray;
 }
 
 .example__wrapper {
@@ -25,7 +25,7 @@
   margin-bottom: 27px;
   padding: 0;
 
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-default;
   line-height: 18px;
 }
 
@@ -66,11 +66,11 @@
 
     width: 82px;
 
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: $font-default;
     font-size: 12px;
     line-height: 12px;
 
-    background-color: #f2f2f2;
+    background-color: $color-bg-gray;
   }
 }
 
@@ -88,11 +88,11 @@
 
     width: 82px;
 
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: $font-default;
     font-size: 12px;
     line-height: 12px;
 
-    background-color: #f2f2f2;
+    background-color: $color-bg-gray;
   }
 }
 
@@ -169,7 +169,7 @@
 
   vertical-align: middle;
 
-  background: #ffffff;
+  background: $color-bg-default;
 
   border: 1px solid #cdcdcd;
   border-radius: 7px;
@@ -184,7 +184,7 @@
   width: 42px;
   height: 6px;
 
-  background: #4caf50;
+  background: $color-slider-mobile;
   border-radius: 4px;
 
   cursor: pointer;
@@ -194,17 +194,17 @@
   width: 35px;
   height: 6px;
 
-  background: #4caf50;
+  background: $color-slider-mobile;
 
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .example {
     padding-top: 51px;
     padding-bottom: 0;
 
-    background-color: #ffffff;
+    background-color: $color-bg-default;
   }
 
   .example__wrapper {
@@ -254,7 +254,7 @@
         font-size: 14px;
         line-height: 14px;
 
-        background-color: #ffffff;
+        background-color: $color-bg-default;
       }
     }
 
@@ -269,7 +269,7 @@
         font-size: 14px;
         line-height: 14px;
 
-        background-color: #ffffff;
+        background-color: $color-bg-default;
       }
     }
   }
@@ -355,7 +355,7 @@
     border: 1px solid #cfcfcf;
     border-radius: 50%;
 
-    background-color: #ffffff;
+    background-color: $color-bg-default;
     background-image: url("../img/slider-control.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -391,7 +391,7 @@
     border: 1px solid #cfcfcf;
     border-radius: 50%;
 
-    background-color: #ffffff;
+    background-color: $color-bg-default;
     background-image: url("../img/slider-control.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -444,7 +444,7 @@
     border: 1px solid #cfcfcf;
     border-radius: 50%;
 
-    background-color: #ffffff;
+    background-color: $color-bg-default;
     background-image: url("../img/slider-control.png");
     background-repeat: no-repeat;
     background-position: center;

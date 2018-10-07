@@ -21,7 +21,7 @@
     width: 100vw;
     height: 3px;
 
-    background-color: #68b738;
+    background-color: $color-header;
   }
 }
 
@@ -39,7 +39,7 @@
   font-weight: normal;
   line-height: 24px;
 
-  background-color: #ffffff;
+  background-color: $color-bg-default;
 }
 
 .contacts__list {
@@ -81,27 +81,27 @@
 
   text-transform: uppercase;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $color-input;
   outline: none;
 
   &::placeholder {
-    color: #444444;
+    color: $color-input-act;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $color-input-hvr;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: $color-input-act;
   }
 
   &:invalid:not(:empty) {
-    border-color: #ff8282;
+    border-color: $color-input-err;
   }
 
   &:invalid:focus {
-    border-color: #ff8282;
+    border-color: $color-input-err;
   }
 }
 
@@ -110,7 +110,7 @@
   top: 50%;
   right: 16px;
 
-  fill: #222222;
+  fill: $color-cont-fill;
 
   transform: translateY(-50%);
 
@@ -120,18 +120,18 @@
 }
 
 .contacts__input:focus + .contacts__icon {
-  fill: #68b738;
+  fill: $color-cont-act;
 }
 
 .contacts__input:invalid:not(:empty) + .contacts__icon {
-  fill: #ff8282;
+  fill: $color-cont-err;
 }
 
 .contacts__input:invalid:focus + .contacts__icon {
-  fill: #ff8282;
+  fill: $color-cont-err;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 69px;
     padding: 0 30px;
@@ -149,7 +149,7 @@
       height: 3px;
 
       content: "";
-      background-color: #68b738;
+      background-color: $color-header;
     }
   }
 

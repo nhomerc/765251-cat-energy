@@ -17,7 +17,7 @@
 .main-nav__item {
   text-align: center;
 
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-input;
 }
 
 .main-nav__link {
@@ -42,7 +42,7 @@
 }
 
 .main-nav__link--active .main-nav__name {
-  border-bottom: 1px solid #68b738;
+  border-bottom: 1px solid $color-menu;
 }
 
 .main-nav__name {
@@ -53,7 +53,7 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     justify-content: flex-start;
