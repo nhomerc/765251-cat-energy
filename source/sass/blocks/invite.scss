@@ -82,3 +82,31 @@
     background-image: ("../img/bg-map-tablet@1x.png");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .invite {
+    position: relative;
+  }
+
+  .invite__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 67;
+    content: "";
+
+    padding: 0 76px;
+    padding-top: 66px;
+    padding-bottom: 54px;
+
+    background-color: $color-bg-default;
+  }
+
+  .invite__map {
+    background-image: ("../img/bg-map-desktop@1x.png");
+  }
+
+  .invite__iframe {
+    min-height: 399px;
+  }
+}

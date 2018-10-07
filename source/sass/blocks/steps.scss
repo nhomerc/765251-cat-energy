@@ -199,5 +199,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .steps {
+    margin-bottom: 85px;
+    padding: 0 110px;
+    padding-bottom: 0;
 
+    border-bottom: none;
+  }
+
+  .steps__item {
+    min-width: 245px;
+    width: 20.08%;
+    margin: 0;
+  }
+
+  .steps__number {
+    right: 0;
+
+    transform: translateX(-10px);
+  }
+
+  .steps__description {
+    width: 100%;
+  }
 }
