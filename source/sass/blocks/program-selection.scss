@@ -30,6 +30,7 @@
 
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 
   &:active {
     opacity: 0.3;
@@ -125,5 +126,21 @@
       width: 18px;
       height: 18px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    width: 46.72%;
+    align-self: stretch;
+    margin-bottom: 0;
+    padding: 0;
+
+    border-top: 1px solid $color-input;
+    border-bottom: 1px solid $color-input;
+  }
+
+  .program-selection__list {
+    border: none;
   }
 }

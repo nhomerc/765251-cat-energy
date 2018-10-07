@@ -63,7 +63,7 @@
   }
 }
 
-.contacts__lable {
+.contacts__label {
   margin-right: 12px;
 }
 
@@ -176,5 +176,28 @@
   .contacts__input {
     padding: 16px 0;
     padding-left: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 71px;
+    padding: 0;
+  }
+
+  .contacts__header {
+    margin-bottom: 70px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -70px;
+
+      width: 70px;
+      height: 3px;
+
+      content: "";
+      background-color: $color-header;
+    }
   }
 }

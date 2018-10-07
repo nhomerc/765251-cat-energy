@@ -44,6 +44,8 @@
   outline: none;
 
   &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
     color: $color-input-act;
   }
 
@@ -91,5 +93,22 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    width: 46.72%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .data__list {
+    padding: 0;
   }
 }

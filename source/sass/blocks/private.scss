@@ -53,3 +53,17 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .private {
+    padding: 0 70px;
+  }
+
+  .private__wrapper {
+    padding: 0 40px;
+  }
+
+  .private__description {
+    margin: 0;
+  }
+}

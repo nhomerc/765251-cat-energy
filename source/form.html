@@ -50,48 +50,51 @@
         <p class="private__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="data">
-          <ul class="data__list">
-            <li class="data__item">
-              <label class="data__label" for="name">Имя:*</label>
-              <input class="data__input" id="name" type="text" placeholder="БАРСИК" required>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="name">Вес (кг):*</label>
-              <input class="data__input" id="name" type="text" placeholder="7" required>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="name">Возраст (лет):*</label>
-              <input class="data__input" id="name" type="text" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="program-selection">
-          <ul class="program-selection__list">
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="losing">
-                <input class="program-selection__input" id="losing" type="radio" name="selector" value="losing-weight"
-                  checked>
-                <span class="program-selection__checkmark"></span>
-                Похудение
-              </label>
-            </li>
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="gathering">
-                <input class="program-selection__input" id="gathering" type="radio" name="selector" value="mass-gathering">
-                <span class="program-selection__checkmark"></span>
-                Набор массы
-              </label>
-            </li>
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="advice">
-                <input class="program-selection__input" id="advice" type="radio" name="selector" value="need-advice">
-                <span class="program-selection__checkmark"></span>
-                Не знаю (нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__data">
+          <fieldset class="data">
+            <ul class="data__list">
+              <li class="data__item">
+                <label class="data__label" for="name">Имя:*</label>
+                <input class="data__input" id="name" type="text" placeholder="БАРСИК" required>
+              </li>
+              <li class="data__item">
+                <label class="data__label" for="name">Вес (кг):*</label>
+                <input class="data__input" id="name" type="text" placeholder="7" required>
+              </li>
+              <li class="data__item">
+                <label class="data__label" for="name">Возраст (лет):</label>
+                <input class="data__input" id="name" type="text" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-selection">
+            <ul class="program-selection__list">
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="losing">
+                  <input class="program-selection__input" id="losing" type="radio" name="selector" value="losing-weight"
+                    checked>
+                  <span class="program-selection__checkmark"></span>
+                  Похудение
+                </label>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="gathering">
+                  <input class="program-selection__input" id="gathering" type="radio" name="selector" value="mass-gathering">
+                  <span class="program-selection__checkmark"></span>
+                  Набор массы
+                </label>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="advice">
+                  <input class="program-selection__input" id="advice" type="radio" name="selector" value="need-advice">
+                  <span class="program-selection__checkmark"></span>
+                  Не знаю (нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
         <fieldset class="contacts">
           <div class="contacts__header">
             <h3 class="contacts__title">Контактные данные (владельца кота)</h3>

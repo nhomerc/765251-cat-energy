@@ -1,3 +1,7 @@
+.catalog {
+  margin-bottom: 31px;
+}
+
 .catalog__title {
   margin: 0;
   padding: 0;
@@ -180,5 +184,43 @@
 
     font-size: 16px;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 21px;
+    padding: 0 110px;
+  }
+
+  .catalog__wrapper {
+    padding: 0;
+  }
+
+  .catalog__item {
+    min-width: 245px;
+    width: 20.08%;
+    padding: 0 38px;
+    padding-bottom: 40px;
+    padding-top: 165px;
+
+    &:nth-child(n+5) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__order {
+    min-width: 169px;
+    padding: 12px 0;
+
+    font-size: 16px;
+  }
+
+  .catalog__button {
+    min-width: 169px;
+
+    padding: 12px 0;
+
+    font-size: 16px;
   }
 }
