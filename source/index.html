@@ -25,18 +25,18 @@
     <nav class="main-nav main-nav--show">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active" href="#">
-            <p class="main-nav__name">Главная</p>
+          <a class="main-nav__link main-nav__link--active main-nav__link--index" href="#">
+            <p class="main-nav__name main-nav__name--index">Главная</p>
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
+          <a class="main-nav__link main-nav__link--index main-nav__name--index" href="catalog.html">
             <p class="main-nav__name">Каталог продукции</p>
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            <p class="main-nav__name">Подбор программы</p>
+          <a class="main-nav__link main-nav__link--index" href="form.html">
+            <p class="main-nav__name main-nav__name--index">Подбор программы</p>
           </a>
         </li>
       </ul>
@@ -45,18 +45,21 @@
 
   <main class="main">
     <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__tagline">Занялся собой? Займись котом!</p>
+      <div class="promo__bg">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__tagline">Занялся собой? Займись котом!</p>
+        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img class="promo__picture" src="img/index-can-mobile@1x.png" alt="Корм для котов">
+        </picture>
+        <a class="promo__link" href="form.html">
+          <button class="button promo__button button--small-font" type="button">Подобрать программу</button>
+        </a>
       </div>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img class="promo__picture" src="img/index-can-mobile@1x.png" alt="Корм для котов">
-      </picture>
-      <a class="promo__link" href="form.html">
-        <button class="button promo__button button--small-font" type="button">Подобрать программу</button>
-      </a>
+      <div class="promo__bg promo__bg--img"></div>
     </section>
     <section class="program">
       <ul class="program__list">

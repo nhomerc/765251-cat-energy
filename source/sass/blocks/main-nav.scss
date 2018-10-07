@@ -82,3 +82,16 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__link--index {
+    z-index: 34;
+
+    color: $color-bg-default;
+    line-height: 25px;
+  }
+
+  .main-nav__link--active .main-nav__name--index {
+    border-bottom: 1px solid $color-bg-default;
+  }
+}

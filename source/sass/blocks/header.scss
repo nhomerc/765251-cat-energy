@@ -68,3 +68,11 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    margin-bottom: 113px;
+    padding: 0 110px;
+    padding-top: 54px;
+  }
+}

@@ -116,3 +116,56 @@
     box-sizing: border-box;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 373px;
+    padding: 0;
+  }
+
+  .promo__bg {
+    width: 50%;
+  }
+
+  .promo__wrapper {
+    width: 420px;
+    padding-left: 190px;
+  }
+
+  .promo__button {
+    left: 190px;
+  }
+
+  .promo__bg--img {
+    position: absolute;
+    right: 0;
+    top: -225px;
+    z-index: -2;
+    content: "";
+
+    width: 50%;
+    min-height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .promo__picture {
+    position: absolute;
+    top: -84px;
+    left: 38.89%;
+    z-index: -1;
+  }
+
+  .button {
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
