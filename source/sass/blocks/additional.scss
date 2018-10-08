@@ -1,34 +1,9 @@
-.additional__wrapper {
-  padding: 0 20px;
-  padding-top: 31px;
-  padding-bottom: 39px;
+.additional {
+  margin-bottom: 30px;
 }
 
-.additional__title {
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 24px;
-
-  border-bottom: 1px solid #cdcdcd;
-
-  &::after {
-    position: absolute;
-    top: 12px;
-    right: -20px;
-
-    width: 46px;
-    height: 3;
-    margin-left: 23px;
-
-    content: "";
-    border: 3px solid #68b738;
-  }
+.additional__wrapper {
+  overflow: hidden;
 }
 
 .additional__list {
@@ -42,7 +17,11 @@
   padding-top: 14px;
   padding-bottom: 17px;
 
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $color-input-hvr;
+
+  &:first-child {
+    border-top: 1px solid $color-input-hvr;
+  }
 }
 
 .additional__subtitle {
@@ -58,7 +37,7 @@
   display: flex;
   justify-content: space-between;
 
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-default;
   line-height: 16px;
 }
 
@@ -68,4 +47,85 @@
 
   text-align: center;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    margin-bottom: 69px;
+  }
+
+  .additional__item {
+    padding: 27px 38px;
+
+    border: 1px solid $color-input-hvr;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+
+  .additional__descriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 28px;
+  }
+
+  .additional__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__description {
+    font-size: 16px;
+  }
+
+  .additional__boxing {
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  .additional__cost {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    min-width: 895px;
+    width: 73.36%;
+    margin: 0;
+  }
+
+  .additional__item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional__button {
+    margin: 0;
+    padding: 13px 0;
+  }
+
+  .additional__descriptions {
+    min-width: 610px;
+    width: 68.16%;
+    margin: 0;
+  }
+
+  .additional__subtitle {
+    width: 41.01%;
+  }
+
+  .additional__description {
+    display: flex;
+    justify-content: space-between;
+    width: 41.01%;
+  }
 }

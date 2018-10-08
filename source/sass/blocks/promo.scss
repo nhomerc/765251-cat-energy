@@ -15,7 +15,7 @@
 
   font-size: 36px;
   font-weight: normal;
-  color: #ffffff;
+  color: $color-bg-default;
   line-height: 36px;
   text-align: center;
 }
@@ -25,7 +25,7 @@
   margin-bottom: 29px;
   padding: 0;
 
-  color: #ffffff;
+  color: $color-bg-default;
   text-align: center;
 }
 
@@ -40,29 +40,132 @@
 }
 
 .button {
-  width: 280px;
+  min-width: 280px;
   padding-top: 13px;
   padding-bottom: 11px;
 
   font-size: 16px;
-  color: #ffffff;
+  color: $color-bg-default;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
   border: none;
-  background-color: #68b738;
+  background-color: $color-btn;
+
+  transition: 0.3s;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $color-btn-hvr;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $color-btn-act;
   }
 }
 
 .promo__button {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+
+    padding: 0 30px;
+
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    padding-left: 90px;
+  }
+
+  .promo__title {
+    width: 430px;
+    margin-bottom: 35px;
+
+    font-size: 60px;
+    color: $color-font;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__tagline {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    color: $color-font;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+
+    font-size: 20px;
+  }
+
+  .button {
+    min-width: 245px;
+    padding: 13px 0;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 373px;
+    padding: 0;
+  }
+
+  .promo__bg {
+    width: 50%;
+  }
+
+  .promo__wrapper {
+    width: 420px;
+    padding-left: 190px;
+  }
+
+  .promo__button {
+    left: 190px;
+  }
+
+  .promo__bg--img {
+    position: absolute;
+    right: 0;
+    top: -225px;
+    z-index: -2;
+    content: "";
+
+    width: 50%;
+    min-height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .promo__picture {
+    position: absolute;
+    top: -84px;
+    left: 38.89%;
+    z-index: -1;
+  }
+
+  .button {
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

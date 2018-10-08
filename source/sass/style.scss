@@ -1,5 +1,6 @@
 @import "fonts";
 @import "normalize.scss";
+@import "variables.scss";
 @import "scaffolding.scss";
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
@@ -15,6 +16,10 @@
 @import "blocks/additional.scss";
 @import "blocks/gifts.scss";
 @import "blocks/private.scss";
+@import "blocks/form.scss";
 @import "blocks/data.scss";
 @import "blocks/program-selection.scss";
 @import "blocks/contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";
+@import "blocks/add.scss";

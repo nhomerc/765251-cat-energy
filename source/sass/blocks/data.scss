@@ -4,7 +4,7 @@
   padding-bottom: 23px;
 
   border: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $color-block-bb;
 }
 
 .data__list {
@@ -29,6 +29,7 @@
 
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .data__input {
@@ -39,18 +40,75 @@
   font-size: 16px;
   line-height: 18px;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $color-input;
   outline: none;
 
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-input-act;
+  }
+
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $color-input-hvr;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: $color-input-act;
   }
 
-  &:invalid {
-    border-color: #ff8282;
+  &:invalid:not(:empty) {
+    border-color: $color-input-err;
+  }
+
+  &:invalid:focus {
+    border-color: $color-input-err;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    margin-bottom: 72px;
+    padding: 0 30px;
+
+    border-bottom: none;
+  }
+
+  .data__list {
+    padding: 0 40px;
+  }
+
+  .data__item {
+    margin-bottom: 20px;
+  }
+
+  .data__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .data__input {
+    padding: 17px 0;
+    padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    width: 46.72%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .data__list {
+    padding: 0;
   }
 }

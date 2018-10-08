@@ -1,14 +1,17 @@
 .gifts {
-  width: 280px;
-  height: 289px;
-  margin: 0 auto;
   margin-bottom: 35px;
+
+  box-sizing: border-box;
+}
+
+.gifts__wrapper {
+  width: 100%;
   padding-top: 190px;
+  padding-bottom: 43px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-
-  box-sizing: border-box;
+  background-size: cover;
 }
 
 .gifts__description {
@@ -18,10 +21,10 @@
   margin: 0 auto;
   padding: 0;
 
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-default;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $color-bg-default;
   text-align: center;
 
   &::before {
@@ -36,6 +39,84 @@
     content: "";
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
-    fill: #ffffff;
+    fill: $color-bg-default;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gifts {
+    width: 100%;
+    margin-bottom: 76px;
+  }
+
+  .gifts__wrapper {
+    padding-top: 75px;
+    padding-bottom: 67px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .gifts__description {
+    width: 170px;
+    margin: 0;
+    padding-left: 423px;
+
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 91px;
+      transform: translateY(-50%);
+
+      width: 55px;
+      height: 60px;
+
+      content: "";
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      fill: $color-bg-default;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gifts {
+    min-width: 245px;
+    width: 20.08%;
+    margin: 0;
+  }
+
+  .gifts__wrapper {
+    min-height: 289px;
+    padding: 0;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .gifts__description {
+    width: 170px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 190px;
+    padding-bottom: 60px;
+
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 65px;
+      left: 50%;
+      content: "";
+
+      width: 55px;
+      height: 60px;
+
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      fill: $color-bg-default;
+
+      transform: translateX(-50%);
+    }
   }
 }

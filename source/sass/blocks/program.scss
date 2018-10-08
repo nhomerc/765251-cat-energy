@@ -18,7 +18,7 @@
   padding-bottom: 22px;
   padding-right: 25px;
 
-  background-color: #f2f2f2;
+  background-color: $color-bg-gray;
 
   &:last-child {
     margin-bottom: 0;
@@ -45,10 +45,10 @@
   padding: 0;
   padding-bottom: 20px;
 
-  font-family: "Arial", sans-serif;
+  font-family: $font-default;
   line-height: 18px;
 
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-input;
 }
 
 .program__subtitle--losing::before {
@@ -84,7 +84,7 @@
   padding: 0;
 
   font-size: 16px;
-  color: #000000;
+  color: $color-font;
 
   text-transform: uppercase;
   text-decoration: none;
@@ -113,4 +113,208 @@
   width: 32px;
 
   background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 0 30px;
+  }
+
+  .program__list {
+    margin-bottom: 52px;
+  }
+
+  .program__item {
+    margin-bottom: 30px;
+    padding-top: 81px;
+    padding-left: 52px;
+    padding-bottom: 62px;
+
+    &--losing {
+      position: relative;
+      padding-right: 285px;
+
+      &::after {
+        position: absolute;
+        top: 80px;
+        right: 92px;
+        content: "";
+
+        width: 140px;
+        height: 194px;
+
+        background-image: url("../img/icon-cat-slim.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &::before {
+        position: absolute;
+        top: 92px;
+        right: 62px;
+        content: "";
+
+        width: 200px;
+        height: 200px;
+
+        border: 1px solid $color-icon-bg;
+        border-radius: 50%;
+        background-color: $color-icon-bg;
+      }
+    }
+
+    &--gathering {
+      position: relative;
+
+      padding-right: 313px;
+
+      &::after {
+        position: absolute;
+        top: 135px;
+        right: 28px;
+        content: "";
+
+        width: 268px;
+        height: 112px;
+
+        background-image: url("../img/icon-cat-pro.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &::before {
+        position: absolute;
+        top: 92px;
+        right: 62px;
+        content: "";
+
+        width: 200px;
+        height: 200px;
+
+        border: 1px solid $color-icon-bg;
+        border-radius: 50%;
+        background-color: $color-icon-bg;
+      }
+    }
+  }
+
+  .program__subtitle {
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .program__subtitle--losing::before {
+    display: none;
+  }
+
+  .program__subtitle--gathering::before {
+    display: none;
+  }
+
+  .program__description {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 0 110px;
+  }
+
+  .program__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__item {
+    width: 39.58%;
+    min-width: 570px;
+    margin-bottom: 0;
+    padding: 0 52px;
+    padding-top: 81px;
+    padding-bottom: 62px;
+
+    box-sizing: border-box;
+
+    &--losing {
+      &::after {
+        position: absolute;
+        top: 41px;
+        left: 66px;
+        content: "";
+
+        width: 70px;
+        height: 97px;
+
+        background-image: url("../img/icon-cat-slim.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &::before {
+        position: absolute;
+        top: 47px;
+        left: 52px;
+        content: "";
+
+        width: 100px;
+        height: 100px;
+
+        border: 1px solid $color-icon-bg;
+        border-radius: 50%;
+        background-color: $color-icon-bg;
+      }
+    }
+
+    &--gathering {
+      &::after {
+        position: absolute;
+        top: 69px;
+        left: 34px;
+        content: "";
+
+        width: 134px;
+        height: 56px;
+
+        background-image: url("../img/icon-cat-pro.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &::before {
+        position: absolute;
+        top: 47px;
+        left: 52px;
+        content: "";
+
+        width: 100px;
+        height: 100px;
+
+        border: 1px solid $color-icon-bg;
+        border-radius: 50%;
+        background-color: $color-icon-bg;
+      }
+    }
+  }
+
+  .program__subtitle {
+    margin-bottom: 70px;
+    padding-left: 164px;
+  }
+
+  .program__description {
+    margin-bottom: 32px;
+  }
 }

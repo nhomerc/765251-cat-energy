@@ -1,7 +1,6 @@
 .private {
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .private__wrapper {
@@ -26,4 +25,45 @@
 
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .private {
+    margin-bottom: 72px;
+    padding: 0;
+  }
+
+  .private__wrapper {
+    margin-bottom: 69px;
+    padding: 0 30px;
+  }
+
+  .private__title {
+    margin-bottom: 46px;
+
+    font-size: 60px;
+  }
+
+  .private__description {
+    width: 347px;
+    margin-left: 39px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .private {
+    margin-bottom: 84px;
+  }
+
+  .private__wrapper {
+    padding: 0 110px;
+  }
+
+  .private__description {
+    margin: 0;
+  }
 }

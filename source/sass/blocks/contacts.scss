@@ -3,30 +3,43 @@
   padding: 31px 20px;
 
   border: none;
+
+  overflow: hidden;
+}
+
+.contacts__header {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: $color-header;
+  }
 }
 
 .contacts__title {
   position: relative;
+  z-index: 1;
 
+  display: inline-block;
+  width: 185px;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
+  padding-right: 22px;
 
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
 
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: -20px;
-    content: "";
-
-    width: 99px;
-    margin-left: 22px;
-
-    border: 3px solid #68b738;
-  }
+  background-color: $color-bg-default;
 }
 
 .contacts__list {
@@ -43,13 +56,14 @@
 
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.contacts__lable {
+.contacts__label {
   margin-right: 12px;
 }
 
@@ -65,19 +79,29 @@
   padding: 15px 0;
   padding-left: 16px;
 
-  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+
+  border: 1px solid $color-input;
   outline: none;
 
+  &::placeholder {
+    color: $color-input-act;
+  }
+
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $color-input-hvr;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: $color-input-act;
   }
 
-  &:invalid {
-    border-color: #ff8282;
+  &:invalid:not(:empty) {
+    border-color: $color-input-err;
+  }
+
+  &:invalid:focus {
+    border-color: $color-input-err;
   }
 }
 
@@ -86,7 +110,7 @@
   top: 50%;
   right: 16px;
 
-  fill: #222222;
+  fill: $color-cont-fill;
 
   transform: translateY(-50%);
 
@@ -96,9 +120,98 @@
 }
 
 .contacts__input:focus + .contacts__icon {
-  fill: #68b738;
+  fill: $color-cont-act;
 }
 
-.contacts__input:invalid + .contacts__icon {
-  fill: #ff8282;
+.contacts__input:invalid:not(:empty) + .contacts__icon {
+  fill: $color-cont-err;
+}
+
+.contacts__input:invalid:focus + .contacts__icon {
+  fill: $color-cont-err;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 69px;
+    padding: 0 30px;
+  }
+
+  .contacts__header {
+    margin-bottom: 70px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -30px;
+
+      width: 30px;
+      height: 3px;
+
+      content: "";
+      background-color: $color-header;
+    }
+  }
+
+  .contacts__title {
+    width: 515px;
+    margin: 0;
+    padding: 0 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contacts__list {
+    padding: 0 40px;
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contacts__input {
+    padding: 16px 0;
+    padding-left: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 71px;
+    padding: 0 70px;
+  }
+
+  .contacts__header {
+    margin-bottom: 70px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -70px;
+
+      width: 70px;
+      height: 3px;
+
+      content: "";
+      background-color: $color-header;
+    }
+  }
+
+  .contacts__title {
+    padding: 0 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 46.72%;
+    margin-bottom: 0;
+  }
 }
