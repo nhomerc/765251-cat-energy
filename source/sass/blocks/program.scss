@@ -1,11 +1,11 @@
 .program {
   margin: 0;
+  margin-bottom: 14px;
   padding: 0 20px;
 }
 
 .program__list {
   margin: 0;
-  margin-bottom: 32px;
   padding: 0;
 
   list-style: none;
@@ -13,7 +13,7 @@
 
 .program__item {
   margin-bottom: 20px;
-  padding-top: 39px;
+  padding-top: 29px;
   padding-left: 20px;
   padding-bottom: 22px;
   padding-right: 25px;
@@ -51,30 +51,68 @@
   border-bottom: 1px solid $color-input;
 }
 
-.program__subtitle--losing::before {
-  position: absolute;
-  left: 0;
+.program__item--losing {
+  position: relative;
 
-  width: 50px;
-  height: 50px;
-  content: "";
+  &::after {
+    position: absolute;
+    top: 21px;
+    left: 23px;
 
-  background-image: url("../img/icon-cat-slim.svg"), url("../img/ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+    width: 50px;
+    height: 50px;
+    content: "";
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    content: "";
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid $color-icon-bg;
+    border-radius: 50%;
+    background-color: $color-icon-bg;
+  }
 }
 
-.program__subtitle--gathering::before {
-  position: absolute;
-  left: -7px;
+.program__item--gathering {
+  position: relative;
 
-  width: 67px;
-  height: 50px;
-  content: "";
+  &::after {
+    position: absolute;
+    top: 22px;
+    left: 13px;
 
-  background-image: url("../img/icon-cat-pro.svg"), url("../img/ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+    width: 67px;
+    height: 50px;
+    content: "";
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    content: "";
+
+    width: 48px;
+    height: 47px;
+
+    border: 1px solid $color-icon-bg;
+    border-radius: 50%;
+    background-color: $color-icon-bg;
+  }
 }
 
 .program__link {
@@ -92,7 +130,7 @@
   &::after {
     position: absolute;
     top: 25%;
-    right: -38px;
+    right: -35px;
 
     width: 24px;
     height: 11px;
@@ -117,27 +155,24 @@
 
 @media (min-width: $tablet-width) {
   .program {
+    margin-bottom: 48px;
     padding: 0 30px;
   }
 
-  .program__list {
-    margin-bottom: 52px;
-  }
-
   .program__item {
-    margin-bottom: 30px;
-    padding-top: 81px;
+    margin-bottom: 32px;
+    padding-top: 76px;
     padding-left: 52px;
-    padding-bottom: 62px;
+    padding-bottom: 57px;
 
     &--losing {
       position: relative;
-      padding-right: 285px;
+      padding-right: 284px;
 
       &::after {
         position: absolute;
         top: 80px;
-        right: 92px;
+        left: 67.23%;
         content: "";
 
         width: 140px;
@@ -150,12 +185,13 @@
 
       &::before {
         position: absolute;
-        top: 92px;
+        top: 90px;
+        left: 63%;
         right: 62px;
         content: "";
 
-        width: 200px;
-        height: 200px;
+        width: 198px;
+        height: 198px;
 
         border: 1px solid $color-icon-bg;
         border-radius: 50%;
@@ -171,7 +207,7 @@
       &::after {
         position: absolute;
         top: 135px;
-        right: 28px;
+        left: 58.19%;
         content: "";
 
         width: 268px;
@@ -184,8 +220,8 @@
 
       &::before {
         position: absolute;
-        top: 92px;
-        right: 62px;
+        top: 90px;
+        left: 63%;
         content: "";
 
         width: 200px;
@@ -199,22 +235,16 @@
   }
 
   .program__subtitle {
+    margin-bottom: 22px;
     padding: 0;
 
     font-size: 36px;
     line-height: 37px;
   }
 
-  .program__subtitle--losing::before {
-    display: none;
-  }
-
-  .program__subtitle--gathering::before {
-    display: none;
-  }
-
   .program__description {
-    margin-bottom: 55px;
+    width: 100%;
+    margin-bottom: 40px;
 
     font-size: 16px;
     line-height: 24px;
@@ -225,6 +255,10 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      right: -48px;
+    }
   }
 }
 

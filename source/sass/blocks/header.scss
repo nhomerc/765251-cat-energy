@@ -1,7 +1,7 @@
 .header {
   margin: 0;
   padding: 0;
-  padding-top: 11px;
+  padding-top: 14px;
 }
 
 .header__wrapper {
@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
 
   border-bottom: 1px solid $color-input;
 }
@@ -52,9 +52,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 62px;
+    margin-bottom: 58px;
     padding: 0 30px;
     padding-top: 24px;
+  }
+
+  .header__link {
+    width: 173px;
   }
 
 

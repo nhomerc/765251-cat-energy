@@ -10,7 +10,7 @@
 .promo__title {
   min-width: 87.5%;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
   padding: 0;
 
   font-size: 36px;
@@ -22,11 +22,12 @@
 
 .promo__tagline {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   padding: 0;
 
   color: $color-bg-default;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .promo__picture {
@@ -64,6 +65,11 @@
   }
 }
 
+.button--small-font {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .promo__button {
   display: block;
   margin: 0 auto;
@@ -84,7 +90,7 @@
 
   .promo__title {
     width: 430px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 
     font-size: 60px;
     color: $color-font;
@@ -103,7 +109,7 @@
 
   .promo__button {
     position: absolute;
-    top: 230px;
+    top: 229px;
     left: 120px;
 
     font-size: 20px;
@@ -114,6 +120,10 @@
     padding: 13px 0;
 
     box-sizing: border-box;
+  }
+
+  .button--small-font {
+    padding: 16px 0;
   }
 }
 
