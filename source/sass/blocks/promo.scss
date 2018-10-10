@@ -133,7 +133,7 @@
 
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 373px;
+    margin-bottom: 354px;
     padding: 0;
   }
 
@@ -147,27 +147,29 @@
   }
 
   .promo__button {
+    top: 234px;
     left: 190px;
   }
 
   .promo__bg--img {
     position: absolute;
     right: 0;
-    top: -225px;
+    top: -229px;
     z-index: -2;
     content: "";
 
     width: 50%;
-    min-height: 696px;
+    min-height: 704px;
 
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
+    background-position: -5px 5px;
     background-size: cover;
   }
 
   .promo__picture {
     position: absolute;
-    top: -84px;
+    top: -81px;
     left: 38.89%;
     z-index: -1;
   }

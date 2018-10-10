@@ -88,11 +88,28 @@
   .main-nav__link--index {
     z-index: 34;
 
+    font-size: 20px;
     color: $color-bg-default;
     line-height: 25px;
   }
 
+  .main-nav__list {
+    padding-top: 12px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+  }
+
+  .main-nav__name {
+    padding-bottom: 8px;
+  }
+
+  .main-nav__link--active .main-nav__name {
+    border: 2px;
+  }
+
   .main-nav__link--active .main-nav__name--index {
-    border-bottom: 1px solid $color-bg-default;
+    border-bottom: 2px solid $color-bg-default;
   }
 }

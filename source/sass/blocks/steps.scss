@@ -200,17 +200,21 @@
 
 @media (min-width: $desktop-width) {
   .steps {
-    margin-bottom: 70px;
+    margin-bottom: 5px;
     padding: 0 110px;
     padding-bottom: 0;
 
     border-bottom: none;
   }
 
+  .steps__title {
+    margin-bottom: 72px;
+  }
+
   .steps__item {
     min-width: 245px;
     width: 20.08%;
-    margin: 15px;
+    margin-bottom: 105px;
 
     &::before {
       right: 0;

@@ -75,8 +75,16 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    margin-bottom: 113px;
+    margin-bottom: 106px;
     padding: 0 110px;
     padding-top: 54px;
+  }
+
+  .header__link {
+    width: 202px;
+  }
+
+  .header__logo {
+    width: 100%;
   }
 }

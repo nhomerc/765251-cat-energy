@@ -96,11 +96,23 @@
     z-index: 67;
     content: "";
 
-    padding: 0 76px;
+    min-width: 570px;
+    padding-left: 76px;
+    padding-right: 76px;
     padding-top: 66px;
     padding-bottom: 54px;
 
     background-color: $color-bg-default;
+
+    box-sizing: border-box;
+  }
+
+  .invite__street {
+    text-align: left;
+  }
+
+  .invite__city {
+    text-align: left;
   }
 
   .invite__map {

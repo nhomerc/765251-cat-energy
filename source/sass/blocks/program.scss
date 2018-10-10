@@ -264,6 +264,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
+    margin-bottom: 73px;
     padding: 0 110px;
   }
 
@@ -277,8 +278,8 @@
     min-width: 570px;
     margin-bottom: 0;
     padding: 0 52px;
-    padding-top: 81px;
-    padding-bottom: 62px;
+    padding-top: 78px;
+    padding-bottom: 60px;
 
     box-sizing: border-box;
 
@@ -303,8 +304,8 @@
         left: 52px;
         content: "";
 
-        width: 100px;
-        height: 100px;
+        width: 98px;
+        height: 98px;
 
         border: 1px solid $color-icon-bg;
         border-radius: 50%;
@@ -333,8 +334,8 @@
         left: 52px;
         content: "";
 
-        width: 100px;
-        height: 100px;
+        width: 98px;
+        height: 98px;
 
         border: 1px solid $color-icon-bg;
         border-radius: 50%;
@@ -349,6 +350,6 @@
   }
 
   .program__description {
-    margin-bottom: 32px;
+    margin-bottom: 14px;
   }
 }
