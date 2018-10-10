@@ -61,7 +61,7 @@
 
   .main-nav__list {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-top: 5px;
   }
 
@@ -81,6 +81,22 @@
 
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .main-nav__link--active .main-nav__name {
+    position: relative;
+    border-bottom: none;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      content: "";
+
+      width: 100%;
+
+      border-bottom: 1px solid $color-menu;
+    }
   }
 }
 

@@ -1,8 +1,15 @@
 .promo {
-  padding-top: 29px;
-  padding-bottom: 22px;
+  position: relative;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  padding-bottom: 22px;
+}
+
+.promo__wrapper {
+  margin-bottom: 134px;
+  padding-top: 27px;
+  padding-bottom: 140px;
+
+  background: url("../img/index-background-mobile@1x.jpg") $color-menu;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -10,7 +17,7 @@
 .promo__title {
   min-width: 87.5%;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding: 0;
 
   font-size: 36px;
@@ -31,9 +38,12 @@
 }
 
 .promo__picture {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 3px;
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  content: "";
+
+  transform: translateX(-50%);
 }
 
 .promo__link {
@@ -70,9 +80,15 @@
   line-height: 18px;
 }
 
+.promo__button-wrapper {
+  text-align: center;
+}
+
 .promo__button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  min-width: 280px;
+
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +102,8 @@
 
   .promo__wrapper {
     padding-left: 90px;
+
+    background: none;
   }
 
   .promo__title {
@@ -99,7 +117,7 @@
   }
 
   .promo__tagline {
-    margin-bottom: 20px;
+    margin-bottom: 359px;
 
     font-size: 20px;
     color: $color-font;
@@ -109,7 +127,7 @@
 
   .promo__button {
     position: absolute;
-    top: 229px;
+    top: 257px;
     left: 120px;
 
     font-size: 20px;
@@ -125,6 +143,15 @@
   .button--small-font {
     padding: 16px 0;
   }
+
+  .promo__picture {
+    position: absolute;
+    top: 227px;
+    left: 50%;
+    content: "";
+
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -133,7 +160,7 @@
 
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 354px;
+    margin-bottom: 14px;
     padding: 0;
   }
 
@@ -143,12 +170,13 @@
 
   .promo__wrapper {
     width: 420px;
-    padding-left: 190px;
+    padding: 0;
+    padding-left: 120px;
   }
 
   .promo__button {
     top: 234px;
-    left: 190px;
+    left: 120px;
   }
 
   .promo__bg--img {
@@ -161,7 +189,7 @@
     width: 50%;
     min-height: 704px;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background: url("../img/index-background-desktop@1x.jpg") $color-menu;
     background-repeat: no-repeat;
     background-position: -5px 5px;
     background-size: cover;
@@ -170,7 +198,7 @@
   .promo__picture {
     position: absolute;
     top: -81px;
-    left: 38.89%;
+    left: 59%;
     z-index: -1;
   }
 

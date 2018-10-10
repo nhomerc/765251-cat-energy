@@ -107,6 +107,9 @@
 }
 
 .example__cost {
+  width: 192px;
+  margin: 0 auto;
+
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -139,6 +142,13 @@
   display: none;
   margin: 0 auto;
   margin-bottom: 35px;
+}
+
+.example__picture--before {
+  position: absolute;
+  left: 0;
+
+  transform: translateX(0);
 }
 
 .example__picture--show {
@@ -297,6 +307,7 @@
     align-items: flex-end;
     align-self: center;
     flex-direction: column;
+    margin: 0;
     padding-top: 2px;
 
     font-size: 20px;
@@ -509,7 +520,7 @@
     justify-content: flex-start;
     width: 50%;
     margin-bottom: 0;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-top: 73px;
     padding-right: 176px;
 
@@ -518,7 +529,7 @@
 
   .example__header {
     margin-bottom: 73px;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .example__eg {
@@ -582,7 +593,7 @@
 
     min-width: 677px;
 
-    transform: translateX(-59%);
+    transform: translateX(-53.5%);
   }
 
   .example__picture--after {

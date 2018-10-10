@@ -1,7 +1,7 @@
 .header {
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 13px;
 }
 
 .header__wrapper {
@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
 
   border-bottom: 1px solid $color-input;
 }
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
+    margin-bottom: 30px;
     padding: 0 30px;
     padding-top: 24px;
   }
@@ -76,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .header {
     margin-bottom: 106px;
-    padding: 0 110px;
+    padding: 0 40px;
     padding-top: 54px;
   }
 
