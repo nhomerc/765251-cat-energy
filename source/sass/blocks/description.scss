@@ -75,3 +75,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .description__item:last-child {
+    margin-bottom: 34px;
+  }
+}

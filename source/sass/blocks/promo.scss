@@ -160,7 +160,7 @@
 
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     padding: 0;
   }
 
@@ -170,24 +170,29 @@
 
   .promo__wrapper {
     width: 420px;
+    margin-top: 56px;
     padding: 0;
     padding-left: 120px;
   }
 
+  .promo__tagline {
+    margin-bottom: 349px;
+  }
+
   .promo__button {
-    top: 234px;
+    top: 290px;
     left: 120px;
   }
 
   .promo__bg--img {
     position: absolute;
     right: 0;
-    top: -229px;
+    top: -169px;
     z-index: -2;
     content: "";
 
     width: 50%;
-    min-height: 704px;
+    min-height: 699px;
 
     background: url("../img/index-background-desktop@1x.jpg") $color-menu;
     background-repeat: no-repeat;
@@ -197,7 +202,7 @@
 
   .promo__picture {
     position: absolute;
-    top: -81px;
+    top: -25px;
     left: 59%;
     z-index: -1;
   }

@@ -80,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .add {
-    padding: 0 70px;
+    padding: 0;
     margin-bottom: 86px;
   }
 
@@ -93,13 +93,13 @@
   .add__header {
     position: relative;
 
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 
     border-bottom: none;
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 24px;
       left: -70px;
 
       width: 70px;
@@ -110,7 +110,7 @@
     }
 
     &::after {
-      top: 50%;
+      top: 24px;
     }
   }
 }
