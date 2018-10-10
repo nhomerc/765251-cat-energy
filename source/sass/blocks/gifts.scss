@@ -6,10 +6,11 @@
 
 .gifts__wrapper {
   width: 100%;
-  padding-top: 190px;
-  padding-bottom: 43px;
+  padding-top: 187px;
+  padding-bottom: 42px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $color-menu;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -50,8 +51,8 @@
   }
 
   .gifts__wrapper {
-    padding-top: 75px;
-    padding-bottom: 67px;
+    padding-top: 72px;
+    padding-bottom: 68px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
@@ -67,7 +68,7 @@
       position: absolute;
       top: 50%;
       left: 91px;
-      transform: translateY(-50%);
+      transform: translateY(-60%);
 
       width: 55px;
       height: 60px;

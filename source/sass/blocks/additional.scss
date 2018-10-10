@@ -1,5 +1,5 @@
 .additional {
-  margin-bottom: 30px;
+  margin-bottom: 39px;
 }
 
 .additional__wrapper {
@@ -14,7 +14,7 @@
 }
 
 .additional__item {
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
 
   border-bottom: 1px solid $color-input-hvr;
@@ -36,9 +36,18 @@
 .additional__description {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 
   font-family: $font-default;
   line-height: 16px;
+}
+
+.additional__boxing {
+  margin-top: 12px;
+}
+
+.additional__cost {
+  margin-top: 12px;
 }
 
 .additional__button {
@@ -55,7 +64,8 @@
   }
 
   .additional__item {
-    padding: 27px 38px;
+    padding: 26px 36px;
+    padding-bottom: 27px;
 
     border: 1px solid $color-input-hvr;
 
@@ -68,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 
   .additional__subtitle {
@@ -82,11 +92,17 @@
 
   .additional__boxing {
     margin: 0;
-    margin-right: 50px;
   }
 
   .additional__cost {
+    min-width: 95px;
     margin: 0;
+
+    text-align: right;
+  }
+
+  .additional__button {
+    padding-bottom: 11px;
   }
 }
 
