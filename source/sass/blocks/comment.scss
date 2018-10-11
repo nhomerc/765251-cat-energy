@@ -1,6 +1,6 @@
 .comment {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
   padding: 0 20px;
 
   border: none;
@@ -11,11 +11,11 @@
 .comment__header {
   position: relative;
 
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 
   &::after {
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 0;
 
     width: 100vw;
@@ -33,7 +33,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-right: 24px;
+  padding-right: 22px;
 
   font-size: 24px;
   font-weight: normal;
@@ -45,7 +45,8 @@
 .comment__textarea {
   width: 100%;
   margin: 0;
-  padding: 15px;
+  padding: 13px;
+  padding-bottom: 9px;
 
   font-size: 16px;
   line-height: 18px;

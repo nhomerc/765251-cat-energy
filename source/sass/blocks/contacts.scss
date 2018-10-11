@@ -1,6 +1,7 @@
 .contacts {
   margin: 0;
-  padding: 31px 20px;
+  padding: 28px 20px;
+  padding-top: 27px;
 
   border: none;
 
@@ -10,11 +11,11 @@
 .contacts__header {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   &::after {
     position: absolute;
-    top: 50%;
+    top: 14px;
     left: 0;
     content: "";
 
@@ -33,7 +34,7 @@
   width: 185px;
   margin: 0;
   padding: 0;
-  padding-right: 22px;
+  padding-right: 16px;
 
   font-size: 24px;
   font-weight: normal;
@@ -64,7 +65,7 @@
 }
 
 .contacts__label {
-  margin-right: 12px;
+  margin-right: 11px;
 }
 
 .contacts__item-wrapper {
@@ -76,8 +77,9 @@
 
 .contacts__input {
   width: 100%;
-  padding: 15px 0;
-  padding-left: 16px;
+  padding: 13px 0;
+  padding-bottom: 12px;
+  padding-left: 14px;
 
   text-transform: uppercase;
 

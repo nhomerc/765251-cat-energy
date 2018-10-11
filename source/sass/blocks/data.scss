@@ -30,12 +30,17 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &:first-child {
+    margin-right: 14px;
+  }
 }
 
 .data__input {
   flex-grow: 1;
-  padding: 15px 0;
-  padding-left: 16px;
+  padding: 13px 0;
+  padding-bottom: 12px;
+  padding-left: 15px;
 
   font-size: 16px;
   line-height: 18px;

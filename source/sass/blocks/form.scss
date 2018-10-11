@@ -4,9 +4,13 @@
 
 .form__button {
   width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .form__description {
+  margin-top: 21px;
+
   font-family: $font-default;
   line-height: 16px;
   text-align: center;
