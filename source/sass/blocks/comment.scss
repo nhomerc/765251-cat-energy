@@ -1,6 +1,6 @@
 .comment {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
   padding: 0 20px;
 
   border: none;
@@ -11,11 +11,11 @@
 .comment__header {
   position: relative;
 
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 
   &::after {
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 0;
 
     width: 100vw;
@@ -33,7 +33,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-right: 24px;
+  padding-right: 22px;
 
   font-size: 24px;
   font-weight: normal;
@@ -45,7 +45,8 @@
 .comment__textarea {
   width: 100%;
   margin: 0;
-  padding: 15px;
+  padding: 13px;
+  padding-bottom: 9px;
 
   font-size: 16px;
   line-height: 18px;
@@ -59,20 +60,20 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 69px;
+    margin-bottom: 63px;
     padding: 0 30px;
   }
 
   .comment__header {
-    margin-bottom: 71px;
+    margin-bottom: 76px;
 
     &::after {
-      top: 50%;
+      top: 22px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 22px;
       left: -30px;
 
       width: 30px;
@@ -84,7 +85,7 @@
   }
 
   .comment__title {
-    padding: 0 40px;
+    padding: 0 39px;
 
     font-size: 36px;
     line-height: 36px;
@@ -92,32 +93,34 @@
 
   .comment__field {
     padding: 0 40px;
+    padding-right: 37px;
   }
 
   .comment__textarea {
-    padding: 18px;
+    padding: 16px;
+    padding-left: 18px;
 
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin-bottom: 70px;
-    padding: 0 70px;
+    margin-bottom: 66px;
+    padding: 0;
   }
 
   .comment__header {
-    margin-bottom: 71px;
+    margin-bottom: 75px;
 
     &::after {
-      top: 50%;
+      top: 23px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 23px;
       left: -70px;
 
       width: 70px;
@@ -126,5 +129,9 @@
       content: "";
       background-color: $color-header;
     }
+  }
+
+  .comment__field {
+    padding: 0 40px;
   }
 }

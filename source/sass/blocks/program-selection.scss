@@ -1,7 +1,7 @@
 .program-selection {
   margin: 0;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 26px;
 
   border: none;
@@ -16,7 +16,7 @@
 }
 
 .program-selection__item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
@@ -89,33 +89,34 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    margin-bottom: 77px;
+    margin-bottom: 75px;
     padding: 0 71px;
+    padding-right: 67px;
 
     border-bottom: none;
   }
 
   .program-selection__list {
     padding: 0;
-    padding-top: 36px;
+    padding-top: 34px;
     padding-bottom: 33px;
 
     border: 1px solid $color-input;
   }
 
   .program-selection__item {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   .program-selection__label {
-    padding-left: 88px;
+    padding-left: 86px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   .program-selection__checkmark {
-    left: 28px;
+    left: 26px;
 
     width: 40px;
     height: 40px;

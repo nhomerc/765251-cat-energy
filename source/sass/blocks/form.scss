@@ -4,9 +4,13 @@
 
 .form__button {
   width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .form__description {
+  margin-top: 21px;
+
   font-family: $font-default;
   line-height: 16px;
   text-align: center;
@@ -24,7 +28,9 @@
   }
 
   .form__button {
-    padding: 16px 0;
+    min-width: 283px;
+    padding: 14px 0;
+    padding-bottom: 15px;
 
     font-size: 20px;
   }
@@ -32,6 +38,7 @@
   .form__description {
     display: inline-block;
     min-width: 283px;
+    margin: auto 0;
 
     font-size: 16px;
     text-align: left;
@@ -42,16 +49,21 @@
   .form__data {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 73px;
-    padding: 0 110px;
+    margin-bottom: 70px;
+    padding: 0 40px;
   }
 
   .form__submit {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .form__btn {
     width: 46.72%;
+  }
+
+  .form__button {
+    padding: 15px 0;
+    padding-bottom: 17px;
   }
 
   .form__description {

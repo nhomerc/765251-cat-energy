@@ -1,7 +1,7 @@
 .header {
   margin: 0;
   padding: 0;
-  padding-top: 11px;
+  padding-top: 13px;
 }
 
 .header__wrapper {
@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 
   border-bottom: 1px solid $color-input;
 }
@@ -52,9 +52,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 62px;
+    margin-bottom: 30px;
     padding: 0 30px;
     padding-top: 24px;
+  }
+
+  .header__link {
+    width: 173px;
   }
 
 
@@ -71,8 +75,16 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    margin-bottom: 113px;
-    padding: 0 110px;
+    margin-bottom: 50px;
+    padding: 0 40px;
     padding-top: 54px;
+  }
+
+  .header__link {
+    width: 202px;
+  }
+
+  .header__logo {
+    width: 100%;
   }
 }

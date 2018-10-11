@@ -1,6 +1,6 @@
 .additionally {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 17px;
   padding: 0 20px;
 
   border: none;
@@ -11,11 +11,11 @@
 .additionally__header {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   &::after {
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 0;
 
     width: 100vw;
@@ -33,7 +33,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-right: 24px;
+  padding-right: 23px;
 
   font-size: 24px;
   font-weight: normal;
@@ -50,7 +50,7 @@
 }
 
 .additionally__item {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   line-height: 18px;
@@ -60,7 +60,7 @@
   position: relative;
 
   display: block;
-  padding-left: 41px;
+  padding-left: 46px;
 
   text-transform: uppercase;
 
@@ -80,8 +80,8 @@
   top: 50%;
   left: 0;
 
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 
   border: 1px solid $color-check-br;
 
@@ -122,20 +122,20 @@
 
 @media (min-width: $tablet-width) {
   .additionally {
-    margin-bottom: 61px;
+    margin-bottom: 52px;
     padding: 0 30px;
   }
 
   .additionally__header {
-    margin-bottom: 53px;
+    margin-bottom: 67px;
 
     &::after {
-      top: 50%;
+      top: 22px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 22px;
       left: -30px;
 
       width: 30px;
@@ -162,12 +162,12 @@
   }
 
   .additionally__label {
-    padding-left: 60px;
+    padding-left: 58px;
   }
 
   .additionally__item {
     min-width: 283px;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
 
     font-size: 20px;
     line-height: 20px;
@@ -182,8 +182,8 @@
   }
 
   .additionally__checkmark {
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
   }
 
   .additionally__label .additionally__checkmark::after {
@@ -193,20 +193,20 @@
 
 @media (min-width: $desktop-width) {
   .additionally {
-    margin-bottom: 54px;
-    padding: 0 70px;
+    margin-bottom: 19px;
+    padding: 0;
   }
 
   .additionally__header {
-    margin-bottom: 53px;
+    margin-bottom: 67px;
 
     &::after {
-      top: 50%;
+      top: 23px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 23px;
       left: -70px;
 
       width: 70px;
@@ -215,5 +215,13 @@
       content: "";
       background-color: $color-header;
     }
+  }
+
+  .additionally__list {
+    padding-right: 0;
+  }
+
+  .additionally__label {
+    padding-left: 58px;
   }
 }
