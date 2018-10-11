@@ -12,6 +12,10 @@
   background: url("../img/index-background-mobile@1x.jpg") $color-menu;
   background-size: 100%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -198,6 +202,10 @@
     background-repeat: no-repeat;
     background-position: -5px 5px;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .promo__picture {

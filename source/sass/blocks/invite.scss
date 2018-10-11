@@ -41,6 +41,11 @@
 
 .invite__map {
   background-image: url("../img/bg-map-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px 400px;
+  }
 }
 
 .invite__iframe {
@@ -81,6 +86,11 @@
 
   .invite__map {
     background-image: ("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px 400px;
+    }
   }
 }
 
@@ -117,6 +127,11 @@
 
   .invite__map {
     background-image: ("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px 400px;
+    }
   }
 
   .invite__iframe {
