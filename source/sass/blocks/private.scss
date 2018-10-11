@@ -58,11 +58,15 @@
 
 @media (min-width: $desktop-width) {
   .private {
-    margin-bottom: 84px;
+    margin-bottom: 80px;
   }
 
   .private__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
+  }
+
+  .private__title {
+    padding-top: 22px;
   }
 
   .private__description {

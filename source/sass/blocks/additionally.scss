@@ -182,8 +182,8 @@
   }
 
   .additionally__checkmark {
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
   }
 
   .additionally__label .additionally__checkmark::after {
@@ -193,20 +193,20 @@
 
 @media (min-width: $desktop-width) {
   .additionally {
-    margin-bottom: 54px;
-    padding: 0 70px;
+    margin-bottom: 19px;
+    padding: 0;
   }
 
   .additionally__header {
-    margin-bottom: 53px;
+    margin-bottom: 67px;
 
     &::after {
-      top: 50%;
+      top: 23px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 23px;
       left: -70px;
 
       width: 70px;
@@ -215,5 +215,13 @@
       content: "";
       background-color: $color-header;
     }
+  }
+
+  .additionally__list {
+    padding-right: 0;
+  }
+
+  .additionally__label {
+    padding-left: 58px;
   }
 }

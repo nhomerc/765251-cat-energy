@@ -205,12 +205,12 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 71px;
-    padding: 0 70px;
+    margin-bottom: 67px;
+    padding: 0;
   }
 
   .contacts__header {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
 
     &::before {
       position: absolute;
@@ -226,12 +226,13 @@
   }
 
   .contacts__title {
-    padding: 0 40px;
+    padding: 0 39px;
   }
 
   .contacts__list {
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
   }
 
   .contacts__item {

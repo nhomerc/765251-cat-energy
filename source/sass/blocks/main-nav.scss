@@ -122,7 +122,11 @@
   }
 
   .main-nav__link--active .main-nav__name {
-    border: 2px;
+    border-bottom: 2px solid $color-menu;
+
+    &::after {
+      bottom: 0;
+    }
   }
 
   .main-nav__link--active .main-nav__name--index {

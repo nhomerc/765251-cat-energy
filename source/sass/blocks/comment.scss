@@ -107,20 +107,20 @@
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin-bottom: 70px;
-    padding: 0 70px;
+    margin-bottom: 66px;
+    padding: 0;
   }
 
   .comment__header {
-    margin-bottom: 71px;
+    margin-bottom: 75px;
 
     &::after {
-      top: 50%;
+      top: 23px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 23px;
       left: -70px;
 
       width: 70px;
@@ -129,5 +129,9 @@
       content: "";
       background-color: $color-header;
     }
+  }
+
+  .comment__field {
+    padding: 0 40px;
   }
 }
