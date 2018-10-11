@@ -60,20 +60,20 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 69px;
+    margin-bottom: 63px;
     padding: 0 30px;
   }
 
   .comment__header {
-    margin-bottom: 71px;
+    margin-bottom: 76px;
 
     &::after {
-      top: 50%;
+      top: 22px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 22px;
       left: -30px;
 
       width: 30px;
@@ -85,7 +85,7 @@
   }
 
   .comment__title {
-    padding: 0 40px;
+    padding: 0 39px;
 
     font-size: 36px;
     line-height: 36px;
@@ -93,13 +93,15 @@
 
   .comment__field {
     padding: 0 40px;
+    padding-right: 37px;
   }
 
   .comment__textarea {
-    padding: 18px;
+    padding: 16px;
+    padding-left: 18px;
 
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
