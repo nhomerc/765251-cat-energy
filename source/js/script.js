@@ -6,7 +6,7 @@ var beforeImg = document.querySelector(".example__picture--before");
 var afterImg = document.querySelector(".example__picture--after");
 var modalBtn = document.querySelector(".modal__button");
 var modalWindow = document.querySelector(".modal__wrapper");
-var orderBtn = document.querySelectorAll(".button--order");
+var orderBtn = document.querySelectorAll(".catalog__button--order");
 var allProductsBtn = document.querySelector(".button--all");
 
 mainMenu.classList.toggle("main-nav--show");

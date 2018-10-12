@@ -11,7 +11,7 @@
 
   &::after {
     position: absolute;
-    top: 50%;
+    top: 15px;
     left: 0;
     content: "";
 
@@ -81,7 +81,7 @@
 @media (min-width: $desktop-width) {
   .add {
     padding: 0;
-    margin-bottom: 86px;
+    margin-bottom: 83px;
   }
 
   .add__wrapper {
@@ -93,13 +93,13 @@
   .add__header {
     position: relative;
 
-    margin-bottom: 80px;
+    margin-bottom: 79px;
 
     border-bottom: none;
 
     &::before {
       position: absolute;
-      top: 24px;
+      top: 23px;
       left: -70px;
 
       width: 70px;
@@ -110,7 +110,12 @@
     }
 
     &::after {
-      top: 24px;
+      top: 23px;
     }
+  }
+
+  .add__title {
+    padding: 0 37px;
+    padding-left: 39px;
   }
 }
