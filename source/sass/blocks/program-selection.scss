@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   border: none;
   border-bottom: 1px solid $color-block-bb;
@@ -11,12 +11,13 @@
 .program-selection__list {
   margin: 0;
   padding: 0 20px;
+  padding-left: 19px;
 
   list-style: none;
 }
 
 .program-selection__item {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
@@ -26,7 +27,7 @@
 .program-selection__label {
   position: relative;
 
-  padding-left: 44px;
+  padding-left: 47px;
 
   font-size: 16px;
   line-height: 18px;
