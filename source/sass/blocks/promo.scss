@@ -5,7 +5,7 @@
 }
 
 .promo__wrapper {
-  margin-bottom: 134px;
+  margin-bottom: 135px;
   padding-top: 27px;
   padding-bottom: 140px;
 
@@ -80,6 +80,8 @@
 }
 
 .button--small-font {
+  padding: 11px 0;
+
   font-size: 14px;
   line-height: 18px;
 }
@@ -105,7 +107,8 @@
   }
 
   .promo__wrapper {
-    padding-left: 90px;
+    margin-bottom: 131px;
+    padding-left: 88px;
 
     background: none;
   }
@@ -131,8 +134,8 @@
 
   .promo__button {
     position: absolute;
-    top: 257px;
-    left: 120px;
+    top: 256px;
+    left: 119px;
 
     font-size: 20px;
   }
@@ -145,7 +148,7 @@
   }
 
   .button--small-font {
-    padding: 16px 0;
+    padding: 17px 0;
   }
 
   .promo__picture {

@@ -5,6 +5,7 @@
   align-items: baseline;
   margin: 0 auto;
   padding: 0;
+  padding-right: 11px;
 
   list-style: none;
 
@@ -17,7 +18,7 @@
   margin-right: 38px;
 
   &:last-child {
-    margin-right: 8px;
+    margin-right: 0;
   }
 }
 
@@ -25,6 +26,8 @@
   .social__list {
     align-items: center;
     margin: 0;
+    padding: 0;
+    padding-left: 1px;
   }
 
   .social__item {
