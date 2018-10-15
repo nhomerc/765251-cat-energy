@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="page__wrapper">
+  <div class="page-wrapper">
     <header class="header">
       <h1 class="visually-hidden">Магазин здорового питания Вашего кота</h1>
       <div class="header__wrapper">
@@ -57,11 +57,11 @@
             <fieldset class="data">
               <ul class="data__list">
                 <li class="data__item">
-                  <label class="data__label" for="name">Имя:&#42</label>
+                  <label class="data__label" for="name">Имя:&#42;</label>
                   <input class="data__input" id="name" type="text" placeholder="БАРСИК" required>
                 </li>
                 <li class="data__item">
-                  <label class="data__label" for="weight">Вес (кг):&#42</label>
+                  <label class="data__label" for="weight">Вес (кг):&#42;</label>
                   <input class="data__input" id="weight" type="text" placeholder="7" required>
                 </li>
                 <li class="data__item">
@@ -104,20 +104,20 @@
             </div>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <label class="contacts__label contacts__label--mail" for="email">E-mail:&#42</label>
+                <label class="contacts__label contacts__label--mail" for="email">E-mail:&#42;</label>
                 <div class="contacts__item-wrapper">
                   <input class="contacts__input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
-                  <svg class="contacts__icon" width="17" height="13">
+                  <svg class="contacts__icon" width="17" height="13" aria-label="Почта">
                     <use xlink:href="img/sprite.svg#email"></use>
                   </svg>
                 </div>
               </li>
               <li class="contacts__item">
-                <label class="contacts__label contacts__label--phone" for="phone">Телефон:&#42</label>
+                <label class="contacts__label contacts__label--phone" for="phone">Телефон:&#42;</label>
                 <div class="contacts__item-wrapper">
                   <input class="contacts__input contacts__input--phone" id="phone" type="tel" placeholder="8 (960) 900-60-90"
                     required>
-                  <svg class="contacts__icon contacts__icon--phone" width="20" height="20">
+                  <svg class="contacts__icon contacts__icon--phone" width="20" height="20" aria-label="Телефон">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
                 </div>
@@ -167,7 +167,7 @@
             <div class="form__btn">
               <button class="button form__button" type="submit">Отправить заявку</button>
             </div>
-            <p class="form__description">&#42 &mdash; Обязательные поля</p>
+            <p class="form__description">&#42; &mdash; Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -188,28 +188,28 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__link" href="index.html" title="Кэт энерджи">
-        <img class="footer__title" src="img/logo-footer.svg" alt="Логотип компании" width="128">
+      <a class="footer__link" href="index.html" aria-label="Кэт энерджи">
+        <img class="footer__title" src="img/logo-footer.svg" alt="Логотип компании" width="128" height="23">
       </a>
       <div class="social footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/">
-              <svg class="footer__icon footer__icon--vk" width="30" height="16" title="Мы в контакте">
+              <svg class="footer__icon footer__icon--vk" width="30" height="16" aria-label="Мы в контакте">
                 <use xlink:href="img/sprite.svg#vk-mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/?hl=ru" title="Мы в instagram">
-              <svg class="footer__icon footer__icon--insta" width="23" height="23">
+            <a class="social__link" href="https://www.instagram.com/?hl=ru">
+              <svg class="footer__icon footer__icon--insta" width="23" height="23" aria-label="Мы в instagram">
                 <use xlink:href="img/sprite.svg#insta-mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://ru-ru.facebook.com/" title="Мы в facebook">
-              <svg class="footer__icon footer__icon--fb" width="14" height="28">
+            <a class="social__link" href="https://ru-ru.facebook.com/">
+              <svg class="footer__icon footer__icon--fb" width="14" height="28" aria-label="Мы в facebook">
                 <use xlink:href="img/sprite.svg#fb-mobile"></use>
               </svg>
             </a>
@@ -217,19 +217,12 @@
         </ul>
       </div>
       <div class="copyrights footer__copyrights">
-        <ul class="copyrights__list">
-          <li class="copyrights__item">
-            <a class="copyrights__link copyrights__link--text" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy">HTML
-              Academy</a>
-          </li>
-          <li class="copyrights__item">
-            <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy">
-              <svg class="footer__icon footer__icon--academy" width="27" height="34">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <a class="copyrights__link copyrights__link--text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Academy">HTML
+          Academy
+          <svg class="footer__icon copyrights__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

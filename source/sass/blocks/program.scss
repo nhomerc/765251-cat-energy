@@ -244,6 +244,7 @@
 
   .program__description {
     width: 100%;
+    max-width: 405px;
     margin-bottom: 37px;
 
     font-size: 16px;
@@ -267,19 +268,20 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    margin-bottom: 73px;
+    margin-bottom: 63px;
     padding: 0 40px;
   }
 
   .program__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .program__item {
     width: 39.58%;
     min-width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding: 0 52px;
     padding-top: 78px;
     padding-bottom: 60px;
@@ -347,12 +349,17 @@
     }
   }
 
+  .program__item:last-child {
+    margin-bottom: 10px;
+  }
+
   .program__subtitle {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     padding-left: 164px;
   }
 
   .program__description {
-    margin-bottom: 14px;
+    max-width: 100%;
+    margin-bottom: 9px;
   }
 }

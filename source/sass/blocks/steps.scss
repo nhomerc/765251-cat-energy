@@ -133,7 +133,7 @@
   .steps {
     margin-bottom: 0;
     padding: 0 30px;
-    padding-bottom: 99px;
+    padding-bottom: 49px;
 
     border-bottom: 1px solid $color-input;
   }
@@ -153,8 +153,9 @@
 
     width: 45.76%;
     min-width: 324px;
-    margin-bottom: 132px;
+    margin-bottom: 82px;
     padding: 0;
+    padding-bottom: 50px;
     padding-top: 111px;
 
     &:nth-child(3) {
@@ -237,7 +238,7 @@
   .steps__item {
     min-width: 245px;
     width: 20.08%;
-    margin-bottom: 105px;
+    margin-bottom: 55px;
 
     &::after {
       position: absolute;

@@ -19,8 +19,8 @@
 }
 
 .promo__title {
-  min-width: 87.5%;
-  margin: 0;
+  max-width: 483px;
+  margin: 0 auto;
   margin-bottom: 24px;
   padding: 0;
 
@@ -107,7 +107,8 @@
   }
 
   .promo__wrapper {
-    margin-bottom: 131px;
+    margin-bottom: 49px;
+    padding-bottom: 0;
     padding-left: 88px;
 
     background: none;
@@ -115,6 +116,8 @@
 
   .promo__title {
     width: 430px;
+    max-width: 100%;
+    margin: 0;
     margin-bottom: 40px;
 
     font-size: 60px;
@@ -124,7 +127,7 @@
   }
 
   .promo__tagline {
-    margin-bottom: 359px;
+    margin-bottom: 10px;
 
     font-size: 20px;
     color: $color-font;
@@ -132,10 +135,15 @@
     text-align: left;
   }
 
+  .promo__button-wrapper {
+    padding-left: 89px;
+
+    text-align: left;
+  }
+
   .promo__button {
-    position: absolute;
-    top: 256px;
-    left: 119px;
+    margin-right: auto;
+    margin-bottom: 529px;
 
     font-size: 20px;
   }
@@ -155,6 +163,7 @@
     position: absolute;
     top: 227px;
     left: 50%;
+    z-index: -1;
     content: "";
 
     transform: translateX(-50%);
@@ -178,17 +187,21 @@
   .promo__wrapper {
     width: 420px;
     margin-top: 56px;
+    margin-bottom: 54px;
     padding: 0;
     padding-left: 120px;
   }
 
   .promo__tagline {
-    margin-bottom: 349px;
+    margin-bottom: 10px;
+  }
+
+  .promo__button-wrapper {
+    padding-left: 120px;
   }
 
   .promo__button {
-    top: 290px;
-    left: 120px;
+    margin-bottom: 242px;
   }
 
   .promo__bg--img {

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="page__wrapper">
+  <div class="page-wrapper">
     <header class="header">
       <h1 class="visually-hidden">Магазин здорового питания Вашего кота</h1>
       <div class="header__wrapper">
@@ -263,7 +263,7 @@
               </div>
               <a class="catalog__button button catalog__button--order" href="order.html">Заказать</a>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item catalog__item--all">
               <svg class="catalog__icon">
                 <use xlink:href="img/sprite.svg#plus"></use>
               </svg>
@@ -358,28 +358,28 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__link" href="index.html" title="Кэт энерджи">
+      <a class="footer__link" href="index.html" aria-label="Кэт энерджи">
         <img class="footer__title" src="img/logo-footer.svg" alt="Логотип компании" width="128">
       </a>
       <div class="social footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/">
-              <svg class="footer__icon footer__icon--vk" width="30" height="16" title="Мы в контакте">
+              <svg class="footer__icon footer__icon--vk" width="30" height="16" aria-label="Мы в контакте">
                 <use xlink:href="img/sprite.svg#vk-mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/?hl=ru" title="Мы в instagram">
-              <svg class="footer__icon footer__icon--insta" width="23" height="23">
+            <a class="social__link" href="https://www.instagram.com/?hl=ru">
+              <svg class="footer__icon footer__icon--insta" width="23" height="23" aria-label="Мы в instagram">
                 <use xlink:href="img/sprite.svg#insta-mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://ru-ru.facebook.com/" title="Мы в facebook">
-              <svg class="footer__icon footer__icon--fb" width="14" height="28">
+            <a class="social__link" href="https://ru-ru.facebook.com/">
+              <svg class="footer__icon footer__icon--fb" width="14" height="28" aria-label="Мы в facebook">
                 <use xlink:href="img/sprite.svg#fb-mobile"></use>
               </svg>
             </a>
@@ -387,19 +387,12 @@
         </ul>
       </div>
       <div class="copyrights footer__copyrights">
-        <ul class="copyrights__list">
-          <li class="copyrights__item">
-            <a class="copyrights__link copyrights__link--text" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy">HTML
-              Academy</a>
-          </li>
-          <li class="copyrights__item">
-            <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy">
-              <svg class="footer__icon footer__icon--academy" width="27" height="34">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <a class="copyrights__link copyrights__link--text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Academy">HTML
+          Academy
+          <svg class="footer__icon copyrights__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

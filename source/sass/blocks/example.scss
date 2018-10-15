@@ -128,7 +128,7 @@
 .example__comparison {
   position: relative;
 
-  min-width: 320px;
+  width: 320px;
   min-height: 240px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -146,6 +146,7 @@
 
 .example__picture--before {
   position: absolute;
+  top: 5px;
   left: 0;
 
   transform: translateX(0);
@@ -345,6 +346,10 @@
     min-width: 677px;
 
     transform: translateX(-49.5%);
+  }
+
+  .example__picture--before {
+    top: 0;
   }
 
   .example__toggle {

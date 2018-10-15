@@ -88,6 +88,10 @@
   display: block;
 }
 
+.program-selection__input:focus ~ .program-selection__checkmark {
+  box-shadow: 0 0 0 2pt $color-menu;
+}
+
 @media (min-width: $tablet-width) {
   .program-selection {
     margin-bottom: 75px;

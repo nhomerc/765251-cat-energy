@@ -208,7 +208,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 67px;
+    margin-bottom: 57px;
     padding: 0;
   }
 
@@ -235,11 +235,16 @@
   .contacts__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 40px;
   }
 
   .contacts__item {
     width: 46.72%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
   }
 }

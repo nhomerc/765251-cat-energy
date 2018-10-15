@@ -1,11 +1,9 @@
-.copyrights__list {
+.copyrights__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
-
-  list-style: none;
 }
 
 .copyrights__link--text {
@@ -18,4 +16,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyrights__icon {
+  margin-left: auto;
 }
