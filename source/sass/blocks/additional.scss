@@ -53,6 +53,8 @@
 .additional__button {
   display: block;
   margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 10px;
 
   text-align: center;
   text-decoration: none;
@@ -65,7 +67,7 @@
 
   .additional__item {
     padding: 26px 36px;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
 
     border: 1px solid $color-input-hvr;
 
@@ -135,8 +137,9 @@
 
   .additional__descriptions {
     min-width: 610px;
-    width: 68.16%;
+    width: 68.45%;
     margin: 0;
+    padding-top: 2px;
   }
 
   .additional__subtitle {
@@ -150,7 +153,7 @@
   }
 
   .additional__cost {
-    min-width: 40px;
+    min-width: 43px;
 
     text-align: left;
   }

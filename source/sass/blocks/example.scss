@@ -13,7 +13,7 @@
 }
 
 .example__wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 0 20px;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   padding: 0;
 
   list-style: none;
@@ -131,7 +131,7 @@
   min-width: 320px;
   min-height: 240px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .example__picture {
@@ -157,9 +157,10 @@
 
 .example__toggle {
   display: flex;
-  justify-content: space-between;
-  width: 198px;
+  justify-content: center;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 15px;
 }
 
 .example__button {
@@ -181,12 +182,20 @@
   }
 }
 
+.example__button--before {
+  margin-right: 18px;
+}
+
+.example__button--after {
+  margin-left: 18px;
+}
+
 .example__slider {
   display: inline-block;
   width: 84px;
   height: 14px;
-  padding: 0 9px;
-  margin: 0 auto;
+  padding: 0 5px;
+  margin: 0;
 
   vertical-align: middle;
 
@@ -321,7 +330,7 @@
     position: relative;
 
     min-height: 462px;
-    padding-top: 341px;
+    padding-top: 344px;
 
     background-color: #eaeaea;
 
@@ -339,11 +348,11 @@
   }
 
   .example__toggle {
-    width: 570px;
+    padding: 0;
   }
 
   .example__slider-wrapper {
-    width: 428px;
+    width: 432px;
   }
 
   .example__button {
@@ -362,6 +371,14 @@
     background: transparent;
 
     border: none;
+  }
+
+  .example__button--before {
+    margin-right: 21px;
+  }
+
+  .example__button--after {
+    margin-left: 21px;
   }
 
   .example__slider:focus {
@@ -521,14 +538,14 @@
     width: 50%;
     margin-bottom: 0;
     padding-left: 40px;
-    padding-top: 73px;
+    padding-top: 72px;
     padding-right: 176px;
 
     box-sizing: border-box;
   }
 
   .example__header {
-    margin-bottom: 73px;
+    margin-bottom: 76px;
     padding: 0 40px;
   }
 
@@ -544,6 +561,7 @@
   }
 
   .example__list {
+    width: 84.5%;
     margin-bottom: 60px;
   }
 
@@ -557,7 +575,7 @@
     }
 
     &--weight {
-      margin-right: 42px;
+      margin-right: 0;
       padding-top: 15px;
       padding-bottom: 19px;
 
@@ -582,6 +600,7 @@
 
   .example__cats {
     width: 50%;
+    padding-top: 341px;
 
     background-color: $color-bg-gray;
   }

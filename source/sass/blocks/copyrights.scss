@@ -1,0 +1,21 @@
+.copyrights__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.copyrights__link--text {
+  font-family: $font-default;
+  font-size: 16px;
+  color: $color-font;
+
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

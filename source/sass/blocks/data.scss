@@ -10,6 +10,7 @@
 .data__list {
   margin: 0;
   padding: 0 20px;
+  padding-left: 19px;
 
   list-style: none;
 }
@@ -37,6 +38,7 @@
   padding: 13px 0;
   padding-bottom: 12px;
   padding-left: 15px;
+  padding-right: 15px;
 
   font-size: 16px;
   line-height: 18px;
@@ -94,6 +96,7 @@
   .data__input {
     padding: 10px 0;
     padding-left: 18px;
+    padding-right: 18px;
 
     font-size: 20px;
     line-height: 20px;
