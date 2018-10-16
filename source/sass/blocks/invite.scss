@@ -100,6 +100,13 @@
     position: relative;
   }
 
+  .invite__wrap {
+    position: relative;
+
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .invite__wrapper {
     position: absolute;
     top: 95px;
@@ -110,8 +117,8 @@
     min-width: 570px;
     padding-left: 76px;
     padding-right: 76px;
-    padding-top: 66px;
-    padding-bottom: 54px;
+    padding-top: 64px;
+    padding-bottom: 56px;
 
     background-color: $color-bg-default;
 

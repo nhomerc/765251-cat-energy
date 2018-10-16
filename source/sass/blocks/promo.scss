@@ -1,4 +1,4 @@
-.promo {
+.promo__wrap {
   position: relative;
 
   padding-bottom: 22px;
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
+  .promo__wrap {
     position: relative;
 
     padding: 0 30px;
@@ -171,8 +171,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo {
-    position: relative;
+  .promo__wrap {
+    // position: relative;
 
     display: flex;
     justify-content: flex-start;
@@ -181,15 +181,19 @@
   }
 
   .promo__bg {
+    position: relative;
+
     width: 50%;
+    max-width: 720px;
   }
 
   .promo__wrapper {
     width: 420px;
+    margin-left: auto;
     margin-top: 56px;
     margin-bottom: 54px;
     padding: 0;
-    padding-left: 120px;
+    padding-right: 111px;
   }
 
   .promo__tagline {
@@ -197,7 +201,10 @@
   }
 
   .promo__button-wrapper {
-    padding-left: 120px;
+    padding: 0;
+    padding-right: 285px;
+
+    text-align: right;
   }
 
   .promo__button {
@@ -212,6 +219,7 @@
     content: "";
 
     width: 50%;
+    max-width: 720px;
     min-height: 699px;
 
     background: url("../img/index-background-desktop@1x.jpg") $color-menu;
@@ -227,7 +235,8 @@
   .promo__picture {
     position: absolute;
     top: -25px;
-    left: 59%;
+    left: auto;
+    right: -668px;
     z-index: -1;
   }
 

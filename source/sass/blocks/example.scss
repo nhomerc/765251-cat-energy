@@ -146,7 +146,7 @@
 
 .example__picture--before {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
 
   transform: translateX(0);
@@ -531,7 +531,7 @@
 
   .example__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     background-color: $color-bg-gray;
   }
@@ -541,6 +541,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
+    max-width: 650px;
     margin-bottom: 0;
     padding-left: 40px;
     padding-top: 72px;
@@ -550,6 +551,8 @@
   }
 
   .example__header {
+    max-width: 1220px;
+    margin: 0 auto;
     margin-bottom: 76px;
     padding: 0 40px;
   }
@@ -605,6 +608,7 @@
 
   .example__cats {
     width: 50%;
+    max-width: 650px;
     padding-top: 341px;
 
     background-color: $color-bg-gray;
