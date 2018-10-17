@@ -50,8 +50,15 @@
   .form__data {
     display: flex;
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
     margin-bottom: 70px;
     padding: 0 40px;
+  }
+
+  .form__wrap {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .form__submit {

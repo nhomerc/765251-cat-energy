@@ -233,7 +233,7 @@
   .catalog {
     margin-top: 15px;
     margin-bottom: 75px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .catalog__title {
@@ -242,7 +242,9 @@
   }
 
   .catalog__wrapper {
-    padding: 0;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .catalog__item {

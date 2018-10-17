@@ -32,7 +32,7 @@
 
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url("../img/icons/icon-mobile-menu.svg");
   background-repeat: no-repeat;
 
   transition: 0.3s;
@@ -44,7 +44,7 @@
   &--open {
     width: 18px;
 
-    background-image: url("../img/icon-close.svg");
+    background-image: url("../img/icons/icon-close.svg");
   }
 }
 

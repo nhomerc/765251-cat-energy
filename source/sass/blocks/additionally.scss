@@ -120,7 +120,7 @@
   width: 21px;
   height: 16px;
 
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/icons/icon-tick.svg");
   background-repeat: no-repeat;
 
   transform: translateY(-50%);
@@ -203,20 +203,26 @@
     padding: 0;
   }
 
+  .additionally__wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .additionally__header {
     margin-bottom: 67px;
 
     &::after {
-      top: 23px;
+      top: 21px;
     }
 
     &::before {
       position: absolute;
-      top: 23px;
+      top: 21px;
       left: -70px;
 
-      width: 70px;
+      width: 100vw;
       height: 3px;
+      margin-left: -100%;
 
       content: "";
       background-color: $color-header;

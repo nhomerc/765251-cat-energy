@@ -212,19 +212,30 @@
     padding: 0;
   }
 
+  .contacts__wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
   .contacts__header {
     margin-bottom: 75px;
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 21px;
       left: -70px;
 
-      width: 70px;
+      width: 100vw;
       height: 3px;
+      margin-left: -100%;
 
       content: "";
       background-color: $color-header;
+    }
+
+    &::after {
+      top: 21px;
     }
   }
 
