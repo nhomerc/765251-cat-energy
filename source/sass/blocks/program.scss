@@ -166,70 +166,44 @@
     padding-bottom: 60px;
 
     &--losing {
-      position: relative;
       padding-right: 284px;
 
       &::after {
-        position: absolute;
         top: 80px;
         left: 67.23%;
-        content: "";
 
         width: 140px;
         height: 194px;
-
-        background-image: url("../img/icons/icon-cat-slim.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 92px;
         left: 63%;
         right: 62px;
-        content: "";
 
         width: 198px;
         height: 198px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
 
     &--gathering {
-      position: relative;
-
       padding-right: 313px;
 
       &::after {
-        position: absolute;
         top: 135px;
         left: 58.19%;
-        content: "";
+
 
         width: 268px;
         height: 112px;
-
-        background-image: url("../img/icons/icon-cat-pro.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 91px;
         left: 63.3%;
-        content: "";
 
         width: 198px;
         height: 198px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
   }
@@ -290,61 +264,37 @@
 
     &--losing {
       &::after {
-        position: absolute;
         top: 41px;
         left: 66px;
-        content: "";
 
         width: 70px;
         height: 97px;
-
-        background-image: url("../img/icons/icon-cat-slim.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 47px;
         left: 52px;
-        content: "";
 
         width: 98px;
         height: 98px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
 
     &--gathering {
       &::after {
-        position: absolute;
         top: 69px;
         left: 34px;
-        content: "";
 
         width: 134px;
         height: 56px;
-
-        background-image: url("../img/icons/icon-cat-pro.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 47px;
         left: 52px;
-        content: "";
 
         width: 98px;
         height: 98px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
   }

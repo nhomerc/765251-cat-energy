@@ -222,25 +222,16 @@
     margin-bottom: 75px;
 
     &::before {
-      position: absolute;
       top: 21px;
       left: -70px;
 
       width: 100vw;
-      height: 3px;
       margin-left: -100%;
-
-      content: "";
-      background-color: $color-header;
     }
 
     &::after {
       top: 21px;
     }
-  }
-
-  .contacts__title {
-    padding: 0 39px;
   }
 
   .contacts__list {

@@ -99,8 +99,6 @@
 
 @media (min-width: $tablet-width) {
   .promo__wrap {
-    position: relative;
-
     padding: 0 30px;
 
     background-image: none;
@@ -160,13 +158,8 @@
   }
 
   .promo__picture {
-    position: absolute;
     top: 227px;
-    left: 50%;
     z-index: -1;
-    content: "";
-
-    transform: translateX(-50%);
   }
 }
 
@@ -191,10 +184,6 @@
     margin-bottom: 54px;
     padding: 0;
     padding-right: 111px;
-  }
-
-  .promo__tagline {
-    margin-bottom: 10px;
   }
 
   .promo__button-wrapper {

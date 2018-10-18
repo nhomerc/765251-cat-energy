@@ -144,13 +144,7 @@
     font-size: 60px;
   }
 
-  .steps__list {
-    flex-wrap: wrap;
-  }
-
   .steps__item {
-    position: relative;
-
     width: 45.76%;
     min-width: 324px;
     margin-bottom: 82px;
@@ -229,10 +223,6 @@
     padding-bottom: 15px;
 
     border-bottom: none;
-  }
-
-  .steps__title {
-    margin-bottom: 72px;
   }
 
   .steps__item {

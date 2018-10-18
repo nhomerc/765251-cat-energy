@@ -47,8 +47,6 @@
   }
 
   .add__header {
-    position: relative;
-
     margin-bottom: 80px;
 
     border-bottom: none;
@@ -98,34 +96,17 @@
   }
 
   .add__header {
-    position: relative;
-
     margin-bottom: 79px;
 
-    border-bottom: none;
-
     &::before {
-      position: absolute;
-      top: 23px;
       left: auto;
 
       width: 100vw;
       margin-left: -100%;
-      height: 3px;
-
-      content: "";
-      background-color: $color-header;
-
-      transform: translateY(-50%);
-    }
-
-    &::after {
-      top: 23px;
     }
   }
 
   .add__title {
-    padding: 0 37px;
     padding-left: 39px;
   }
 }

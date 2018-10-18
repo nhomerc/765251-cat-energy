@@ -8,7 +8,7 @@ var modalBtn = document.querySelector(".modal__button");
 var modalWindow = document.querySelector(".modal__wrapper");
 var orderBtn = document.querySelectorAll(".catalog__button--order");
 var addBtn = document.querySelectorAll(".additional__button--order");
-var allProductsBtn = document.querySelector(".button--all");
+var allProductsBtn = document.querySelector(".catalog__button--all");
 
 mainMenu.classList.toggle("main-nav--show");
 showHideButton.classList.toggle("header__menu-button--open");
@@ -65,7 +65,7 @@ for (var i = 0; i < addBtn.length; i++) {
   }
 }
 
-if (document.querySelector(".button--all")) {
+if (document.querySelector(".catalog__button--all")) {
   allProductsBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
   })
