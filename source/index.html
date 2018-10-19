@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#68b738" />
+  <meta name="Description" content="Cat Energy">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="/css/style.min.css" as="style">
   <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -15,7 +18,7 @@
     <div class="header__wrap">
       <h1 class="visually-hidden">Магазин здорового питания Вашего кота</h1>
       <div class="header__wrapper">
-        <a class="header__link" href="index.html" title="Cat energy">
+        <a class="header__link" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/content/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
@@ -28,17 +31,17 @@
       <nav class="main-nav main-nav--show">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#" title="Домашняя страница">
+            <a class="main-nav__link main-nav__link--active" href="#">
               <span class="main-nav__name main-nav__name--index">Главная</span>
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index" href="catalog.html" title="Каталог продукции">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">
               <span class="main-nav__name  main-nav__name--index">Каталог продукции</span>
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index" href="form.html" title="Подбор программы">
+            <a class="main-nav__link main-nav__link--index" href="form.html">
               <span class="main-nav__name main-nav__name--index">Подбор программы</span>
             </a>
           </li>
@@ -56,9 +59,14 @@
             <p class="promo__tagline">Занялся собой? Займись котом!</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/index-can-desktop@1x.webp 1x, img/content/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/index-can-tablet@1x.webp 1x, img/content/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/index-can-mobile@1x.webp 1x, img/content/index-can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1300px)" srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/content/index-can-tablet@1x.jpg 1x, img/content/index-can-tablet@2x.jpg 2x">
-            <img class="promo__picture" src="img/content/index-can-mobile@1x.png" srcset="img/content/index-can-mobile@2x.png 2x" alt="Корм для котов">
+            <img class="promo__picture" src="img/content/index-can-mobile@1x.png" srcset="img/content/index-can-mobile@2x.png 2x"
+              alt="Корм для котов">
           </picture>
           <div class="promo__button-wrapper">
             <a class="button promo__button button--small-font" href="form.html">Подобрать программу</a>
@@ -140,12 +148,20 @@
         <div class="example__cats">
           <div class="example__comparison">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp 1x, img/content/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp 1x, img/content/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/before-mobile.webp 1x, img/content/before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
               <img class="example__picture example__picture--before" src="img/content/before-mobile.png" srcset="img/content/before-mobile@2x.png 2x"
                 alt="Кот до и после">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp 1x, img/content/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/after-mobile.webp 1x, img/content/after-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
               <img class="example__picture example__picture--after" src="img/content/after-mobile.png" srcset="img/content/after-mobile@2x.png 2x"
@@ -155,7 +171,7 @@
           <div class="example__toggle">
             <button class="example__button example__button--before example__button--active" type="button">Было</button>
             <div class="example__slider-wrapper">
-              <input class="example__slider" type="range" min="1" max="100" value="0">
+              <input class="example__slider" type="range" min="0" max="300" value="0">
             </div>
             <button class="example__button example__button--after" type="button">Стало</button>
           </div>
@@ -220,7 +236,21 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <!-- <script>
+      function initMap() {
+        var element = document.querySelector('.invite__map');
+        var options = {
+          zoom: 16,
+          center: {lat: 59.938631, lng: 30.323055}
+        };
+        var myMap = new google.maps.Map(element, options);
+      }
+
+    </script> -->
+ <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3JicBk5LUbECz675H9pVtdR5DsWFmaaA&callback=initMap"
+     async defer></script> -->
+  <script src="js/script.min.js"></script>
+  <script src="svgxuse.js" defer></script>
   <script src="js/picturefill.min.js"></script>
 </body>
 
