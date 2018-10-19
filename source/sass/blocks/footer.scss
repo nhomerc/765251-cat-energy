@@ -1,8 +1,11 @@
 .footer {
+  background-color: $color-bg-gray;
+}
+
+.footer__wrap {
   padding: 0 20px;
   padding-top: 38px;
-  padding-bottom: 2px;
-  background-color: $color-bg-gray;
+  padding-bottom: 22px;
 }
 
 .footer__title {
@@ -60,8 +63,13 @@
   height: 100%;
 }
 
+.copyrights__icon {
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,8 +105,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
+  .footer__wrap {
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
     padding: 0 40px;
     padding-top: 57px;
     padding-bottom: 56px;

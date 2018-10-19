@@ -132,4 +132,8 @@
   .main-nav__link--active .main-nav__name--index {
     border-bottom: 2px solid $color-bg-default;
   }
+
+  .main-nav__name--index {
+    color: $color-bg-default;
+  }
 }

@@ -63,7 +63,7 @@
     height: 50px;
     content: "";
 
-    background-image: url("../img/icon-cat-slim.svg");
+    background-image: url("../img/icons/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -95,7 +95,7 @@
     height: 50px;
     content: "";
 
-    background-image: url("../img/icon-cat-pro.svg");
+    background-image: url("../img/icons/icon-cat-pro.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -136,7 +136,7 @@
     height: 11px;
     content: "";
 
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icons/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
@@ -150,7 +150,7 @@
 
   width: 32px;
 
-  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-image: url("../img/icons/icon-right-arrow-verylong.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -166,70 +166,44 @@
     padding-bottom: 60px;
 
     &--losing {
-      position: relative;
       padding-right: 284px;
 
       &::after {
-        position: absolute;
         top: 80px;
         left: 67.23%;
-        content: "";
 
         width: 140px;
         height: 194px;
-
-        background-image: url("../img/icon-cat-slim.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 92px;
         left: 63%;
         right: 62px;
-        content: "";
 
         width: 198px;
         height: 198px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
 
     &--gathering {
-      position: relative;
-
       padding-right: 313px;
 
       &::after {
-        position: absolute;
         top: 135px;
         left: 58.19%;
-        content: "";
+
 
         width: 268px;
         height: 112px;
-
-        background-image: url("../img/icon-cat-pro.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 91px;
         left: 63.3%;
-        content: "";
 
         width: 198px;
         height: 198px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
   }
@@ -244,6 +218,7 @@
 
   .program__description {
     width: 100%;
+    max-width: 405px;
     margin-bottom: 37px;
 
     font-size: 16px;
@@ -267,19 +242,20 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    margin-bottom: 73px;
+    margin-bottom: 63px;
     padding: 0 40px;
   }
 
   .program__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .program__item {
     width: 39.58%;
     min-width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding: 0 52px;
     padding-top: 78px;
     padding-bottom: 60px;
@@ -288,71 +264,57 @@
 
     &--losing {
       &::after {
-        position: absolute;
         top: 41px;
         left: 66px;
-        content: "";
 
         width: 70px;
         height: 97px;
-
-        background-image: url("../img/icon-cat-slim.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 47px;
         left: 52px;
-        content: "";
 
         width: 98px;
         height: 98px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
 
     &--gathering {
       &::after {
-        position: absolute;
         top: 69px;
         left: 34px;
-        content: "";
 
         width: 134px;
         height: 56px;
-
-        background-image: url("../img/icon-cat-pro.svg");
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &::before {
-        position: absolute;
         top: 47px;
         left: 52px;
-        content: "";
 
         width: 98px;
         height: 98px;
-
-        border: 1px solid $color-icon-bg;
-        border-radius: 50%;
-        background-color: $color-icon-bg;
       }
     }
   }
 
+  .program__item:last-child {
+    margin-bottom: 10px;
+  }
+
   .program__subtitle {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     padding-left: 164px;
   }
 
   .program__description {
-    margin-bottom: 14px;
+    max-width: 100%;
+    margin-bottom: 9px;
+  }
+
+  .program__wrap {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }

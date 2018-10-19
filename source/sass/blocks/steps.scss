@@ -61,13 +61,13 @@
   width: 60px;
   height: 60px;
 
-  background-image: url("../img/advantage-leaf@1x.png");
+  background-image: url("../img/decorative/advantage-leaf@1x.png");
   background-color: $color-icon-bg;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-leaf@2x.png");
+    background-image: url("../img/decorative/advantage-leaf@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -80,13 +80,13 @@
   width: 60px;
   height: 60px;
 
-  background-image: url("../img/advantage-powder@1x.png");
+  background-image: url("../img/decorative/advantage-powder@1x.png");
   background-color: $color-icon-bg;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-powder@2x.png");
+    background-image: url("../img/decorative/advantage-powder@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -99,13 +99,13 @@
   width: 60px;
   height: 60px;
 
-  background-image: url("../img/advantage-dining@1x.png");
+  background-image: url("../img/decorative/advantage-dining@1x.png");
   background-color: $color-icon-bg;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-dining@2x.png");
+    background-image: url("../img/decorative/advantage-dining@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -118,13 +118,13 @@
   width: 60px;
   height: 60px;
 
-  background-image: url("../img/advantage-clock@1x.png");
+  background-image: url("../img/decorative/advantage-clock@1x.png");
   background-color: $color-icon-bg;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advantage-clock@2x.png");
+    background-image: url("../img/decorative/advantage-clock@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -133,7 +133,7 @@
   .steps {
     margin-bottom: 0;
     padding: 0 30px;
-    padding-bottom: 99px;
+    padding-bottom: 49px;
 
     border-bottom: 1px solid $color-input;
   }
@@ -144,17 +144,12 @@
     font-size: 60px;
   }
 
-  .steps__list {
-    flex-wrap: wrap;
-  }
-
   .steps__item {
-    position: relative;
-
     width: 45.76%;
     min-width: 324px;
-    margin-bottom: 132px;
+    margin-bottom: 82px;
     padding: 0;
+    padding-bottom: 50px;
     padding-top: 111px;
 
     &:nth-child(3) {
@@ -230,14 +225,10 @@
     border-bottom: none;
   }
 
-  .steps__title {
-    margin-bottom: 72px;
-  }
-
   .steps__item {
     min-width: 245px;
     width: 20.08%;
-    margin-bottom: 105px;
+    margin-bottom: 55px;
 
     &::after {
       position: absolute;
@@ -250,5 +241,10 @@
 
   .steps__description {
     width: 100%;
+  }
+
+  .steps__wrap {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }

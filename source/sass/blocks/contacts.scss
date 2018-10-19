@@ -208,38 +208,45 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 67px;
+    margin-bottom: 57px;
     padding: 0;
+  }
+
+  .contacts__wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .contacts__header {
     margin-bottom: 75px;
 
     &::before {
-      position: absolute;
-      top: 50%;
+      top: 21px;
       left: -70px;
 
-      width: 70px;
-      height: 3px;
-
-      content: "";
-      background-color: $color-header;
+      width: 100vw;
+      margin-left: -100%;
     }
-  }
 
-  .contacts__title {
-    padding: 0 39px;
+    &::after {
+      top: 21px;
+    }
   }
 
   .contacts__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 40px;
   }
 
   .contacts__item {
     width: 46.72%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
   }
 }

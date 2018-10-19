@@ -40,10 +40,10 @@
 }
 
 .invite__map {
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/decorative/bg-map-mobile@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.png");
+    background-image: url("../img/decorative/bg-map-mobile@2x.png");
     background-size: 320px 400px;
   }
 }
@@ -55,7 +55,6 @@
 
 @media (min-width: $tablet-width) {
   .invite__wrapper {
-    display: flex;
     justify-content: space-between;
     padding: 0 71px;
     padding-top: 63px;
@@ -86,10 +85,10 @@
   }
 
   .invite__map {
-    background-image: ("../img/bg-map-tablet@1x.png");
+    background-image: ("../img/decorative/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.png");
+      background-image: url("../img/decorative/bg-map-tablet@2x.png");
       background-size: 767px 400px;
     }
   }
@@ -98,6 +97,13 @@
 @media (min-width: $desktop-width) {
   .invite {
     position: relative;
+  }
+
+  .invite__wrap {
+    position: relative;
+
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .invite__wrapper {
@@ -110,8 +116,8 @@
     min-width: 570px;
     padding-left: 76px;
     padding-right: 76px;
-    padding-top: 66px;
-    padding-bottom: 54px;
+    padding-top: 64px;
+    padding-bottom: 56px;
 
     background-color: $color-bg-default;
 
@@ -127,10 +133,10 @@
   }
 
   .invite__map {
-    background-image: ("../img/bg-map-desktop@1x.png");
+    background-image: ("../img/decorative/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.png");
+      background-image: url("../img/decorative/bg-map-desktop@2x.png");
       background-size: 1440px 400px;
     }
   }
