@@ -209,7 +209,7 @@
 
     background: url("../img/decorative/index-background-desktop@1x.jpg") $color-bg-green;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
