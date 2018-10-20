@@ -612,8 +612,10 @@
 
   .example__comparison {
     top: -183px;
+    left: auto;
+    right: 0;
 
-    transform: translateX(-53.5%);
+    transform: translateX(-1%);
   }
 
   .example__picture--after {
